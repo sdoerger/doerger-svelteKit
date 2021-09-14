@@ -1,4 +1,12 @@
 <script context="module" lang="ts">
+  import { dynamicTitle } from '../../stores/dynamicTitle';
+
+	let dynamicTitle_value;
+
+	dynamicTitle.subscribe(value => {
+		dynamicTitle_value = value;
+	});
+
 	export const title = 'Stefan Dörger';
 	export const subTitle = 'Software Development';
 </script>
@@ -10,7 +18,8 @@
 				class="tracking-tighter font-bold uppercase leading-none md:mx-auto font-josefinSans text-sdDarkGrey-400"
 			>
 				<p class="text-7xl mb-12">
-					{title}
+					<!-- {title} -->
+					{dynamicTitle_value}
 				</p>
 				<p class="text-4xl">
 					{subTitle}
