@@ -1,11 +1,21 @@
-<script context="module" lang="ts">
-  import { dynamicTitle } from '../../stores/dynamicTitle';
+<script lang="ts">
+	import { dynamicTitle } from '../../stores/dynamicTitle';
 
+	// Var to assign from store
 	let dynamicTitle_value;
 
-	dynamicTitle.subscribe(value => {
+	// Like computed to get value from store
+	const unsubscribe = dynamicTitle.subscribe(value => {
 		dynamicTitle_value = value;
 	});
+
+	function updateDynamicTitle() {
+		dynamicTitle.update((n) => {
+			console.log(n);
+
+			return n + 1;
+		});
+	}
 
 	export const title = 'Stefan Dörger';
 	export const subTitle = 'Software Development';
@@ -24,6 +34,7 @@
 				<p class="text-4xl">
 					{subTitle}
 				</p>
+				<button class="bg-red-400 p-3" on:click={updateDynamicTitle}> UPDATE </button>
 			</div>
 		</div>
 	</div>
