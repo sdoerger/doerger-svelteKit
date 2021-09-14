@@ -9,8 +9,8 @@
 		dynamicTitle_value = value;
 	});
 
-	function updateDynamicTitle() {
-		dynamicTitle.set('Software Development');
+	function updateDynamicTitle(newText) {
+		dynamicTitle.set(newText);
 	}
 
 	export const title = 'Stefan Dörger';
@@ -30,7 +30,9 @@
 				<p class="text-4xl">
 					{subTitle}
 				</p>
-				<button class="bg-red-400 p-3" on:click={updateDynamicTitle}> UPDATE </button>
+				<button class="bg-red-400 p-3" on:click={() => updateDynamicTitle('Software')}>
+					UPDATE
+				</button>
 			</div>
 		</div>
 	</div>
