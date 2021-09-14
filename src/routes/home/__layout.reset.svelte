@@ -5,16 +5,12 @@
 	let dynamicTitle_value;
 
 	// Like computed to get value from store
-	const unsubscribe = dynamicTitle.subscribe(value => {
+	const unsubscribe = dynamicTitle.subscribe((value) => {
 		dynamicTitle_value = value;
 	});
 
 	function updateDynamicTitle() {
-		dynamicTitle.update((n) => {
-			console.log(n);
-
-			return n + 1;
-		});
+		dynamicTitle.set('Software Development');
 	}
 
 	export const title = 'Stefan Dörger';
