@@ -1,0 +1,48 @@
+<div>
+	<div
+		class="
+          flex
+          justify-between
+          w-full
+          h-14
+          pt-3
+          px-6
+          fixed
+          z-20
+          sm:hidden
+        "
+	/>
+	<div class="relative justify-end">
+		<div class="w-full lg:w-1/2 ml-auto" />
+		<div
+			class="
+            z-20
+            md:z-10
+            fixed
+            w-full
+            mt-14
+            sm:mt-0
+            lg:w-1/2
+            ml-auto
+            py-3
+            sm:py-2
+            px-12
+            sm:px-24
+            sm:h-12
+          "
+		>
+			<div
+				class="
+              flex flex-col
+              sm:flex-row
+              justify-between
+              items
+              space-y-3
+              sm:space-y-0
+            "
+			>
+				sd
+			</div>
+		</div>
+	</div>
+</div>

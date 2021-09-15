@@ -1,5 +1,6 @@
 <script lang="ts">
-	import { dynamicTitle } from '../../stores/dynamicTitle';
+	import TheTopNavigation from '$lib/header/TheTopNavigation.svelte';
+	import { dynamicTitle } from '$lib/stores/dynamicTitle';
 
 	// Var to assign from store
 	let dynamicTitle_value;
@@ -9,13 +10,15 @@
 		dynamicTitle_value = value;
 	});
 
-	function updateDynamicTitle(newText) {
+	function updateDynamicTitle(newText: string) {
 		dynamicTitle.set(newText);
 	}
 
 	export const title = 'Stefan Dörger';
 	export const subTitle = 'Software Development';
 </script>
+
+<TheTopNavigation />
 
 <div class="relative">
 	<div class="bg-sdGreen-400 relative lg:fixed w-full lg:w-1/2 lg:min-h-screen inset-0">
@@ -30,7 +33,7 @@
 				<p class="text-4xl">
 					{subTitle}
 				</p>
-				<button class="bg-red-400 p-3" on:click={() => updateDynamicTitle('Software')}>
+				<button class="bg-red-400 p-3 mt-10" on:click={() => updateDynamicTitle('Software Development')}>
 					UPDATE
 				</button>
 			</div>
