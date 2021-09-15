@@ -1,1 +1,5 @@
-<h2 class="text-sdGreen-400 text-7xl font-josefinSans uppercase pt-12">Hello World!</h2>
+<script lang="ts">
+import IntroSection from "$lib/home/Intro-Section.svelte";
+</script>
+
+<IntroSection />
