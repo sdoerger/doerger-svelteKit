@@ -33,7 +33,10 @@
 				<p class="text-4xl">
 					{subTitle}
 				</p>
-				<button class="bg-red-400 p-3 mt-10" on:click={() => updateDynamicTitle('Software Development')}>
+				<button
+					class="bg-red-400 p-3 mt-10"
+					on:click={() => updateDynamicTitle('Software Development')}
+				>
 					UPDATE
 				</button>
 			</div>
@@ -42,7 +45,7 @@
 	<div class="w-full bg-sdDarkGrey-400 lg:min-h-screen lg:w-1/2 ml-auto inset-0">
 		<div class="px-12 pt-36 lg:top-16 lg:left-0 lg:p-20 lg:pt-36 text-sdlightGrey-50 lg:text-2xl">
 			<main>
-				<slot />
+				{#if false}<slot />{/if}
 			</main>
 		</div>
 	</div>
