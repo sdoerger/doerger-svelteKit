@@ -6,7 +6,16 @@
 	const options = {};
 
 	// Props
-	export let sectionTitle: string, sectionSubtitle: string, sectionComponent: string = '';
+	export let sectionTitle: string,
+		sectionSubtitle: string,
+		sectionComponent: string = '';
+
+	// Mutate titles
+	function updateDynamicTitle() {
+		console.log('Changed');
+
+		// dynamicTitle.set(newText);
+	}
 </script>
 
 <pre>
@@ -22,6 +31,7 @@
 	on:enter={(event) => {
 		const { inView, entry, scrollDirection, observe, unobserve } = event.detail;
 		isInView = inView;
+		updateDynamicTitle()
 	}}
 	on:leave={(event) => {
 		const { inView, entry, scrollDirection, observe, unobserve } = event.detail;

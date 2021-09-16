@@ -2,10 +2,7 @@
 	import ScrollSpy from '$lib/components/Elements/ScrollSpy.svelte';
 </script>
 
-<ScrollSpy
-sectionTitle="Stefan Dörger"
-sectionSubtitle="JavaScript Developer"
->
+<ScrollSpy sectionTitle="Stefan Dörger" sectionSubtitle="JavaScript Developer">
 	<div class="mb-10">
 		<h2 class="text-sdGreen-400 lg:text-4xl mb-10">Intro</h2>
 

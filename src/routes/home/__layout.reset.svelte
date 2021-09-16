@@ -44,9 +44,7 @@
 	</div>
 	<div class="w-full bg-sdDarkGrey-400 lg:min-h-screen lg:w-1/2 ml-auto inset-0">
 		<div class="px-12 pt-36 lg:top-16 lg:left-0 lg:p-20 lg:pt-36 text-sdlightGrey-50 lg:text-2xl">
-			<main>
-				{#if false}<slot />{/if}
-			</main>
+			<slot />
 		</div>
 	</div>
 </div>
