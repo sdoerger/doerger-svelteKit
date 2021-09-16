@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Header from '$lib/header/Header.svelte';
+	import Header from '$lib/components/Navigation/Header.svelte';
 	import '../app.postcss';
 </script>
 
