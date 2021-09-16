@@ -2,6 +2,9 @@
 	// Inview / Scroll spying
 	import { inview } from 'svelte-inview';
 
+	// Import store
+	import { dynamicTitle } from '$lib/stores/dynamicTitle';
+
 	let isInView;
 	const options = {};
 
@@ -14,31 +17,18 @@
 	function updateDynamicTitle() {
 		console.log('Changed');
 
-		// dynamicTitle.set(newText);
+		dynamicTitle.set(sectionTitle);
+		dynamicSubTitle.set(sectionSubtitle);
 	}
 </script>
 
-<pre>
-  {isInView}
-</pre>
-
 <div
-	use:inview={options}
-	on:change={(event) => {
-		const { inView, entry, scrollDirection, observe, unobserve } = event.detail;
-		isInView = inView;
-	}}
+	use:inview={{ threshold: 0.5 }}
 	on:enter={(event) => {
 		const { inView, entry, scrollDirection, observe, unobserve } = event.detail;
 		isInView = inView;
-		updateDynamicTitle()
-	}}
-	on:leave={(event) => {
-		const { inView, entry, scrollDirection, observe, unobserve } = event.detail;
-		isInView = inView;
+		updateDynamicTitle();
 	}}
 >
-	>{isInView ? 'Hey I am in the viewport' : 'Bye, Bye'}
-	<!-- <IntroSection /> -->
 	<slot />
 </div>
