@@ -1,13 +1,22 @@
 <script lang="ts">
+	// import javascript from '$assets/img/icons/javascript';
+	// import typescript from '$assets/img/icons/typescript';
+	// import html from '$assets/img/icons/html';
+	// import css from '$assets/img/icons/css';
+	// import sass from '$assets/img/icons/sass';
+	// import bash from '$assets/img/icons/bash';
+	// import mongodb from '$assets/img/icons/mongodb';
+	// import mysql from '$assets/img/icons/mysql';
+
 	const codingLanguages = [
 		{
 			label: 'JavaScript',
-			icon: 'js',
+			icon: 'javascript',
 			level: '3'
 		},
 		{
 			label: 'TypeScript',
-			icon: 'ts',
+			icon: 'typescript',
 			level: '2'
 		},
 		{
@@ -32,12 +41,12 @@
 		},
 		{
 			label: 'MongoDB',
-			icon: 'mongo',
+			icon: 'mongodb',
 			level: '1'
 		},
 		{
 			label: 'MySql',
-			icon: 'sql',
+			icon: 'mysql',
 			level: '1'
 		}
 	];

@@ -1,4 +1,14 @@
 <script lang="ts">
+	// import vue from '$lib/assets/img/icons/vue';
+	// import nuxt from '$lib/assets/img/icons/nuxt';
+	// import tailwindcss from '$lib/assets/img/icons/tailwind';
+	// import vite from '$lib/assets/img/icons/vite';
+	// import nodejs from '$lib/assets/img/icons/nodejs';
+	// import git from '$lib/assets/img/icons/git';
+	// import boot from '$lib/assets/img/icons/boot';
+	// import linux from '$lib/assets/img/icons/linux';
+	// import puppeteer from '$lib/assets/img/icons/puppeteer';
+
 	const codingFrameworks = [
 		{
 			label: 'Vue.js',
@@ -21,12 +31,17 @@
 			level: '2'
 		},
 		{
+			label: 'Vite',
+			icon: 'vite',
+			level: '1'
+		},
+		{
 			label: 'Node.js',
-			icon: 'node',
+			icon: 'nodejs',
 			level: '2'
 		},
 		{
-			label: 'Git',
+			label: 'Git (+ GitLab)',
 			icon: 'git',
 			level: '2'
 		},
@@ -41,8 +56,8 @@
 			level: '2'
 		},
 		{
-			label: 'Playwright',
-			icon: 'play',
+			label: 'Puppeteer/Playwright',
+			icon: 'puppeteer',
 			level: '1'
 		}
 	];
