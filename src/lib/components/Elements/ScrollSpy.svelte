@@ -3,7 +3,7 @@
 	import { inview } from 'svelte-inview';
 
 	// Import store
-	import { dynamicTitle, dynamicSubTitle, updateTitle, updateSubTitle } from "$stores/dynamicTitle";
+	import { dynamicTitle, dynamicSubTitle, updateTitle, updateSubTitle } from '$stores/dynamicTitle';
 
 	let isInView;
 	const options = {};
@@ -23,9 +23,13 @@
 <div
 	use:inview={{ threshold: 0.5 }}
 	on:enter={(event) => {
-		const { inView, entry, scrollDirection, observe, unobserve } = event.detail;
+		const { inView } = event.detail;
 		isInView = inView;
 		updateTitles();
+	}}
+	on:change={(event) => {
+		const { scrollDirection } = event.detail;
+		console.log(scrollDirection);
 	}}
 >
 	<slot />

@@ -1,13 +1,11 @@
 <script lang="ts">
 	import TheTopNavigation from '$lib/components/Navigation/TheTopNavigation.svelte';
-	import { dynamicTitle } from "$stores/dynamicTitle";
-	import { dynamicSubTitle } from "$stores/dynamicTitle";
+	import { dynamicTitle } from '$stores/dynamicTitle';
+	import { dynamicSubTitle } from '$stores/dynamicTitle';
 
 	export const title = 'Stefan Dörger';
 	export const subTitle = 'Software Development';
 </script>
-
-<TheTopNavigation />
 
 <div class="relative">
 	<div class="bg-sdGreen-400 relative lg:fixed w-full lg:w-1/2 lg:min-h-screen inset-0">
@@ -26,7 +24,8 @@
 		</div>
 	</div>
 	<div class="w-full bg-sdDarkGrey-400 lg:min-h-screen lg:w-1/2 ml-auto inset-0">
-		<div class="px-12 pt-36 lg:top-16 lg:left-0 lg:p-20 lg:pt-36 text-sdlightGrey-50 lg:text-2xl">
+		<div class="">
+			<TheTopNavigation />
 			<slot />
 		</div>
 	</div>
