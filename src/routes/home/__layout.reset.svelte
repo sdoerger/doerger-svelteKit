@@ -1,6 +1,6 @@
 <script lang="ts">
 	import TheTopNavigation from '$lib/components/Navigation/TheTopNavigation.svelte';
-	import { dynamicTitle } from '$lib/stores/dynamicTitle';
+	import { dynamicTitle } from "$stores/dynamicTitle";
 
 	// Var to assign from store
 	let dynamicTitle_value, dynamicSubTitle_value;

@@ -3,7 +3,7 @@
 	import { inview } from 'svelte-inview';
 
 	// Import store
-	import { dynamicTitle } from '$lib/stores/dynamicTitle';
+	import { dynamicTitle } from "$stores/dynamicTitle";
 
 	let isInView;
 	const options = {};
