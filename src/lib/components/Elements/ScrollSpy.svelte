@@ -3,7 +3,7 @@
 	import { inview } from 'svelte-inview';
 
 	// Import store
-	import { dynamicTitle } from "$stores/dynamicTitle";
+	import { dynamicTitle, dynamicSubTitle, updateTitle, updateSubTitle } from "$stores/dynamicTitle";
 
 	let isInView;
 	const options = {};
@@ -14,11 +14,9 @@
 		sectionComponent: string = '';
 
 	// Mutate titles
-	function updateDynamicTitle() {
-		console.log('Changed');
-
-		dynamicTitle.set(sectionTitle);
-		dynamicSubTitle.set(sectionSubtitle);
+	function updateTitles() {
+		updateTitle(sectionTitle);
+		updateSubTitle(sectionSubtitle);
 	}
 </script>
 
@@ -27,7 +25,7 @@
 	on:enter={(event) => {
 		const { inView, entry, scrollDirection, observe, unobserve } = event.detail;
 		isInView = inView;
-		updateDynamicTitle();
+		updateTitles();
 	}}
 >
 	<slot />

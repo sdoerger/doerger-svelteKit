@@ -1,19 +1,7 @@
 <script lang="ts">
 	import TheTopNavigation from '$lib/components/Navigation/TheTopNavigation.svelte';
 	import { dynamicTitle } from "$stores/dynamicTitle";
-
-	// Var to assign from store
-	let dynamicTitle_value, dynamicSubTitle_value;
-
-	// Like computed to get value from store
-	const unsubscribeDynamicTitle = dynamicTitle.subscribe((value) => {
-		dynamicTitle_value = value;
-	});
-
-	// Like computed to get value from store
-	const unsubscribeDynamicSubTitle = dynamicTitle.subscribe((value) => {
-		dynamicSubTitle_value = value;
-	});
+	import { dynamicSubTitle } from "$stores/dynamicTitle";
 
 	export const title = 'Stefan Dörger';
 	export const subTitle = 'Software Development';
@@ -29,10 +17,10 @@
 			>
 				<h1 class="text-7xl mb-12">
 					<!-- {title} -->
-					{dynamicTitle_value}
+					{$dynamicTitle}
 				</h1>
 				<h2 class="text-4xl">
-					{dynamicSubTitle_value}
+					{$dynamicSubTitle}
 				</h2>
 			</div>
 		</div>

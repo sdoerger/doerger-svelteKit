@@ -2,4 +2,11 @@ import { writable } from "svelte/store";
 
 export const dynamicTitle = writable('');
 export const dynamicSubTitle = writable('');
-// export const dynamicTitle = writable('Stefan Dörger');
+
+export const updateTitle = (title) => {
+	dynamicTitle.set(title)
+}
+
+export const updateSubTitle = (subTitle) => {
+	dynamicSubTitle.set(subTitle)
+}
