@@ -3,9 +3,9 @@
 </script>
 
 <ScrollSpy sectionTitle="Services" sectionSubtitle="Schritte zur Website">
-	<section class="index-section px-12 pt-36 lg:top-16 lg:left-0 lg:p-20 lg:pt-36 text-sdlightGrey-50 lg:text-2xl">
+	<section class="index-section">
 		<div class="mb-10">
-			<h2 class="text-sdGreen-400 lg:text-4xl mb-10">Services</h2>
+			<h2 class="">Services</h2>
 			<p class="mb-10">
 				Für wen mache ich das? Für alle, deren Vision von Templates zerhackt wird und die
 				Funktionalität brauchen, die ein Baukasten nicht bietet. Ich biete einen Rundum-Service, von

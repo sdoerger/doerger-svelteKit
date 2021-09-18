@@ -3,9 +3,9 @@
 </script>
 
 <ScrollSpy sectionTitle="Stefan Dörger" sectionSubtitle="JavaScript Developer">
-	<section class="index-section px-12 pt-36 lg:top-16 lg:left-0 lg:p-20 lg:pt-36 text-sdlightGrey-50 lg:text-2xl">
+	<section class="index-section">
 		<div class="mb-10">
-			<h2 class="text-sdGreen-400 lg:text-4xl mb-10">Intro</h2>
+			<h2 class="">Intro</h2>
 			<h3 class="mb-10">... Von Ihrer Idee</h3>
 			<p class="mb-10">
 				Hi, ich bin Stefan, Software-Entwickler (Fullstack Web-Development) mit 4 Jahren Erfahrung.

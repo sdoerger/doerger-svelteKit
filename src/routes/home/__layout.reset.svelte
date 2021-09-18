@@ -24,8 +24,8 @@
 		</div>
 	</div>
 	<div class="w-full bg-sdDarkGrey-400 lg:min-h-screen lg:w-1/2 ml-auto inset-0">
-		<div class="">
-			<TheTopNavigation />
+		<TheTopNavigation />
+		<div class="py-36">
 			<slot />
 		</div>
 	</div>

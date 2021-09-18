@@ -10,7 +10,7 @@
 
 <ScrollSpy {sectionTitle} sectionSubtitle="Programmiersprachen">
 	<section
-		class="index-section px-12 pt-36 lg:top-16 lg:left-0 lg:p-20 lg:pt-36 text-sdlightGrey-50 lg:text-2xl"
+		class="index-section"
 	>
 		<div class="mb-10">
 			<p>Hier eine Auswahl der Programmiersprachen die ich täglich nutze.</p>
@@ -21,7 +21,7 @@
 
 <ScrollSpy {sectionTitle} sectionSubtitle="Frameworks/Libraries">
 	<section
-		class="index-section px-12 pt-36 lg:top-16 lg:left-0 lg:p-20 lg:pt-36 text-sdlightGrey-50 lg:text-2xl"
+		class="index-section"
 	>
 		<div class="mb-10">
 			<p>Hier eine Auswahl der Programmiersprachen die ich täglich nutze.</p>

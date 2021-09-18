@@ -6,6 +6,48 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	/* .index-section{
+		min-height: 100vh;
+	} */
+
+	.index-section h1,
+	.index-section h2,
+	.index-section h3,
+	.index-section h4 {
+		@apply text-sdGreen-400 mb-10;
+	}
+
+	/* .index-section h1 {
+		@apply lg:text-4xl;
+	} */
+
+	.index-section h2 {
+		@apply lg:text-4xl;
+	}
+
+	.index-section h3 {
+		@apply lg:text-2xl;
+	}
+
+	/* .index-section h4 {
+		@apply lg:text-md;
+	} */
+
+	.index-section h1,
+	.index-section h2,
+	.index-section h3,
+	.index-section h4,
+	.index-section p {
+		@apply px-20;
+	}
+
+	.index-section p {
+		@apply text-sdlightGrey-50 lg:text-2xl;
+	}
+}
+
 /* 
 
 :root {
