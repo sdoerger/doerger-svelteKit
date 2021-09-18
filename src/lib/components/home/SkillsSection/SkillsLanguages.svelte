@@ -1,12 +1,23 @@
 <script lang="ts">
-	import javascript from '$lib/assets/img/icons/javascript.svg';
-	// import typescript from '$lib/assets/img/icons/typescript.svg';
-	// import html from '$lib/assets/img/icons/html.svg';
-	// import css from '$lib/assets/img/icons/css.svg';
-	// import sass from '$lib/assets/img/icons/sass.svg';
-	// import bash from '$lib/assets/img/icons/bash.svg';
-	// import mongodb from '$lib/assets/img/icons/mongodb.svg';
-	// import mysql from '$lib/assets/img/icons/mysql.svg';
+	import iconJavascript from '$lib/assets/img/icons/javascript.svg';
+	import iconTypescript from '$lib/assets/img/icons/typescript.svg';
+	import iconHtml from '$lib/assets/img/icons/html.svg';
+	import iconCss from '$lib/assets/img/icons/css.svg';
+	import iconSass from '$lib/assets/img/icons/sass.svg';
+	import iconBash from '$lib/assets/img/icons/bash.svg';
+	import iconMongodb from '$lib/assets/img/icons/mongodb.svg';
+	import iconMysql from '$lib/assets/img/icons/mysql.svg';
+
+	const languageIcons = {
+		javascript: iconJavascript,
+		typescript: iconTypescript,
+		html: iconHtml,
+		css: iconCss,
+		sass: iconSass,
+		bash: iconBash,
+		mongodb: iconMongodb,
+		mysql: iconMysql
+	};
 
 	const codingLanguages = [
 		{
@@ -52,11 +63,11 @@
 	];
 </script>
 
-<div class="grid grid-cols-3 justify-items-center gap-4">
-	{#each codingLanguages as codingLanguage}
-		<div class="bg-red-400 border border-blue-400">
-			{codingLanguage.label}
-		</div>
-		<!-- <img src={javascript} alt="" /> -->
-	{/each}
-</div>
+	<div class="grid grid-cols-3 justify-items-center gap-4">
+		{#each codingLanguages as codingLanguage}
+			<!-- <div class="bg-red-400 border border-blue-400">
+				{codingLanguage.label}
+			</div> -->
+			<img src={languageIcons[codingLanguage.icon]} alt="" class="object-contain h-36 w-full p-3" />
+		{/each}
+	</div>

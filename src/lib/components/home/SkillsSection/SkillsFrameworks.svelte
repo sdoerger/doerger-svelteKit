@@ -1,13 +1,27 @@
 <script lang="ts">
-	// import vue from '$lib/assets/img/icons/vue.svg';
-	// import nuxt from '$lib/assets/img/icons/nuxt.svg';
-	// import tailwindcss from '$lib/assets/img/icons/tailwind.svg';
-	// import vite from '$lib/assets/img/icons/vite.svg';
-	// import nodejs from '$lib/assets/img/icons/nodejs.svg';
-	// import git from '$lib/assets/img/icons/git.svg';
-	// import boot from '$lib/assets/img/icons/boot.svg';
-	// import linux from '$lib/assets/img/icons/linux.svg';
-	// import puppeteer from '$lib/assets/img/icons/puppeteer.svg';
+	import iconVue from '$lib/assets/img/icons/vue.svg';
+	import iconNuxt from '$lib/assets/img/icons/nuxt.svg';
+	import iconTailwindcss from '$lib/assets/img/icons/tailwind.svg';
+	// import iconVite from '$lib/assets/img/icons/vite.svg';
+	import iconNodejs from '$lib/assets/img/icons/nodejs.svg';
+	import iconGit from '$lib/assets/img/icons/git.svg';
+	import iconBootstrap from '$lib/assets/img/icons/bootstrap.svg';
+	import iconLinux from '$lib/assets/img/icons/ubuntu.svg';
+	import iconPuppeteer from '$lib/assets/img/icons/puppeteer.svg';
+	import iconSvelte from '$lib/assets/img/icons/svelte.svg';
+
+	const frameworkIcons = {
+		vue: iconVue,
+		nuxt: iconNuxt,
+		svelte: iconSvelte,
+		tailwindcss: iconTailwindcss,
+		// vite: iconVite,
+		nodejs: iconNodejs,
+		git: iconGit,
+		boot: iconBootstrap,
+		linux: iconLinux,
+		puppeteer: iconPuppeteer
+	};
 
 	const codingFrameworks = [
 		{
@@ -22,7 +36,7 @@
 		},
 		{
 			label: 'Svelte',
-			icon: 'nuxt',
+			icon: 'svelte',
 			level: '1'
 		},
 		{
@@ -47,7 +61,7 @@
 		},
 		{
 			label: 'Bootstrap',
-			icon: 'boot',
+			icon: 'bootstrap',
 			level: '3'
 		},
 		{
@@ -65,8 +79,9 @@
 
 <div class="grid grid-cols-3 justify-items-center gap-4">
 	{#each codingFrameworks as codingFramework}
-		<div class="bg-red-400 border border-blue-400">
+		<!-- <div class="bg-red-400 border border-blue-400">
 			{codingFramework.label}
-		</div>
+		</div> -->
+		<img src={frameworkIcons[codingFramework.icon]} alt="" class="object-contain h-36 w-full p-3" />
 	{/each}
 </div>
