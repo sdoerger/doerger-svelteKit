@@ -1,8 +1,8 @@
 <script lang="ts">
 	import iconVue from '$lib/assets/img/icons/vue.svg';
 	import iconNuxt from '$lib/assets/img/icons/nuxt.svg';
-	import iconTailwindcss from '$lib/assets/img/icons/tailwind.svg';
-	// import iconVite from '$lib/assets/img/icons/vite.svg';
+	import iconTailwindcss from '$lib/assets/img/icons/tailwindcss.svg';
+	import iconVite from '$lib/assets/img/icons/vitejs.svg';
 	import iconNodejs from '$lib/assets/img/icons/nodejs.svg';
 	import iconGit from '$lib/assets/img/icons/git.svg';
 	import iconBootstrap from '$lib/assets/img/icons/bootstrap.svg';
@@ -15,11 +15,11 @@
 		nuxt: iconNuxt,
 		svelte: iconSvelte,
 		tailwindcss: iconTailwindcss,
-		// vite: iconVite,
+		vitejs: iconVite,
 		nodejs: iconNodejs,
 		git: iconGit,
-		boot: iconBootstrap,
-		linux: iconLinux,
+		bootstrap: iconBootstrap,
+		ubuntu: iconLinux,
 		puppeteer: iconPuppeteer
 	};
 
@@ -41,12 +41,12 @@
 		},
 		{
 			label: 'TailwindCSS',
-			icon: 'tailwind',
+			icon: 'tailwindcss',
 			level: '2'
 		},
 		{
 			label: 'Vite',
-			icon: 'vite',
+			icon: 'vitejs',
 			level: '1'
 		},
 		{
@@ -66,7 +66,7 @@
 		},
 		{
 			label: 'Linux/Ubuntu',
-			icon: 'linux',
+			icon: 'ubuntu',
 			level: '2'
 		},
 		{
