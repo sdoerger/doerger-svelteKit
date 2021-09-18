@@ -63,11 +63,15 @@
 	];
 </script>
 
-	<div class="grid grid-cols-3 justify-items-center gap-4">
-		{#each codingLanguages as codingLanguage}
-			<!-- <div class="bg-red-400 border border-blue-400">
-				{codingLanguage.label}
-			</div> -->
-			<img src={languageIcons[codingLanguage.icon]} alt="" class="object-contain h-36 w-full p-3" />
-		{/each}
-	</div>
+<div class="grid grid-cols-3 justify-items-center gap-4">
+	{#each codingLanguages as codingLanguage}
+		<div class="text-center">
+			<img
+				src={languageIcons[codingLanguage.icon]}
+				alt=""
+				class="object-contain h-36 w-full p-3 mb-5"
+			/>
+			<small class="text-sdlightGrey-50">{codingLanguage.label}</small>
+		</div>
+	{/each}
+</div>

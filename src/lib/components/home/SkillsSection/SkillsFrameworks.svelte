@@ -82,6 +82,13 @@
 		<!-- <div class="bg-red-400 border border-blue-400">
 			{codingFramework.label}
 		</div> -->
-		<img src={frameworkIcons[codingFramework.icon]} alt="" class="object-contain h-36 w-full p-3" />
+		<div class="text-center">
+			<img
+				src={frameworkIcons[codingFramework.icon]}
+				alt=""
+				class="object-contain h-36 w-full p-3 mb-5"
+			/>
+			<small class="text-sdlightGrey-50">{codingFramework.label}</small>
+		</div>
 	{/each}
 </div>
