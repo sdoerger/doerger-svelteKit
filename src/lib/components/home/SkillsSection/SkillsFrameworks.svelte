@@ -1,13 +1,13 @@
 <script lang="ts">
-	// import vue from '$lib/assets/img/icons/vue';
-	// import nuxt from '$lib/assets/img/icons/nuxt';
-	// import tailwindcss from '$lib/assets/img/icons/tailwind';
-	// import vite from '$lib/assets/img/icons/vite';
-	// import nodejs from '$lib/assets/img/icons/nodejs';
-	// import git from '$lib/assets/img/icons/git';
-	// import boot from '$lib/assets/img/icons/boot';
-	// import linux from '$lib/assets/img/icons/linux';
-	// import puppeteer from '$lib/assets/img/icons/puppeteer';
+	// import vue from '$lib/assets/img/icons/vue.svg';
+	// import nuxt from '$lib/assets/img/icons/nuxt.svg';
+	// import tailwindcss from '$lib/assets/img/icons/tailwind.svg';
+	// import vite from '$lib/assets/img/icons/vite.svg';
+	// import nodejs from '$lib/assets/img/icons/nodejs.svg';
+	// import git from '$lib/assets/img/icons/git.svg';
+	// import boot from '$lib/assets/img/icons/boot.svg';
+	// import linux from '$lib/assets/img/icons/linux.svg';
+	// import puppeteer from '$lib/assets/img/icons/puppeteer.svg';
 
 	const codingFrameworks = [
 		{
