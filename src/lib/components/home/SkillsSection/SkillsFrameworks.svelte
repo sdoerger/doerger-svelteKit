@@ -27,52 +27,62 @@
 		{
 			label: 'Vue.js',
 			icon: 'vue',
-			level: '3'
+			level: '3',
+			link: ''
 		},
 		{
 			label: 'Nuxt.js',
 			icon: 'nuxt',
-			level: '2'
-		},
-		{
-			label: 'Svelte',
-			icon: 'svelte',
-			level: '1'
+			level: '2',
+			link: ''
 		},
 		{
 			label: 'TailwindCSS',
 			icon: 'tailwindcss',
-			level: '2'
+			level: '2',
+			link: ''
 		},
 		{
-			label: 'Vite',
-			icon: 'vitejs',
-			level: '1'
+			label: 'Svelte',
+			icon: 'svelte',
+			level: '1',
+			link: ''
 		},
 		{
 			label: 'Node.js',
 			icon: 'nodejs',
-			level: '2'
+			level: '2',
+			link: ''
 		},
 		{
 			label: 'Git (+ GitLab)',
 			icon: 'git',
-			level: '2'
+			level: '2',
+			link: ''
 		},
 		{
 			label: 'Bootstrap',
 			icon: 'bootstrap',
-			level: '3'
+			level: '3',
+			link: ''
 		},
 		{
 			label: 'Linux/Ubuntu',
 			icon: 'ubuntu',
-			level: '2'
+			level: '2',
+			link: ''
+		},
+		{
+			label: 'Vite',
+			icon: 'vitejs',
+			level: '1',
+			link: ''
 		},
 		{
 			label: 'Puppeteer/Playwright',
 			icon: 'puppeteer',
-			level: '1'
+			level: '1',
+			link: ''
 		}
 	];
 </script>

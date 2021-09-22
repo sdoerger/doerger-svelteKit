@@ -1,7 +1,6 @@
 <script lang="ts">
 	import TheTopNavigation from '$lib/components/Navigation/TheTopNavigation.svelte';
-	import { dynamicTitle } from '$stores/dynamicTitle';
-	import { dynamicSubTitle } from '$stores/dynamicTitle';
+	import { dynamicTitle, dynamicSubTitle } from '$stores/dynamicTitle';
 
 	export const title = 'Stefan Dörger';
 	export const subTitle = 'Software Development';

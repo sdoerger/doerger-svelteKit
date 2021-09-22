@@ -23,37 +23,44 @@
 		{
 			label: 'JavaScript',
 			icon: 'javascript',
-			level: '3'
+			level: '3',
+			link: ''
 		},
 		{
 			label: 'TypeScript',
 			icon: 'typescript',
-			level: '2'
+			level: '2',
+			link: ''
 		},
 		{
 			label: 'HTML',
 			icon: 'html',
-			level: '3'
+			level: '3',
+			link: ''
 		},
 		{
 			label: 'CSS',
 			icon: 'css',
-			level: '3'
+			level: '3',
+			link: ''
 		},
 		{
 			label: 'SASS',
 			icon: 'sass',
-			level: '2'
+			level: '2',
+			link: ''
 		},
 		{
 			label: 'Bash',
 			icon: 'bash',
-			level: '1'
+			level: '1',
+			link: ''
 		},
 		{
 			label: 'MongoDB',
 			icon: 'mongodb',
-			level: '1'
+			level: '1',
+			link: ''
 		},
 		{
 			label: 'MySql',
