@@ -1,7 +1,7 @@
 <script lang="ts">
-	import IntroSection from '$lib/components/home/Intro-Section.svelte';
-	import ServiceSection from '$lib/components/home/Service-Section.svelte';
-	import SkillsSection from '$lib/components/home/Skills-Section.svelte';
+	import IntroSection from '$lib/components/Home/IntroSection.svelte';
+	import ServiceSection from '$lib/components/Home/ServiceSection.svelte';
+	import SkillsSection from '$lib/components/Home/SkillsSection.svelte';
 </script>
 
 <IntroSection />

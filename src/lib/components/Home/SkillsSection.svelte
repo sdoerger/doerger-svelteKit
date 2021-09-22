@@ -2,8 +2,8 @@
 	// Components
 	import ScrollSpy from '$lib/components/Elements/ScrollSpy.svelte';
 
-	import SkillsLanguages from './SkillsSection/SkillsLanguages.svelte';
-	import SkillsFrameworks from './SkillsSection/SkillsFrameworks.svelte';
+	import SkillsLanguages from '$lib/components/Home/SkillsSection/SkillsLanguages.svelte';
+	import SkillsFrameworks from '$lib/components/Home/SkillsSection/SkillsFrameworks.svelte';
 
 	const sectionTitle = 'Skills';
 </script>
