@@ -1,17 +1,22 @@
 <script lang="ts">
 	// SVELTE
-	import { onMount } from 'svelte';
-
-	// COMPONENTS
-	import TheTopNavigation from '$lib/components/Navigation/TheTopNavigation.svelte';
-	import IntroSectionCustom from '$lib/components/Home/DynamicComponents/IntroSectionCustom.svelte';
+	// import { onMount } from 'svelte';
 
 	// STORE
 	import { dynamicTitle, dynamicSubTitle, dynamicComponent } from '$stores/dynamicTitle';
 
+	// COMPONENTS
+	import TheTopNavigation from '$lib/components/Navigation/TheTopNavigation.svelte';
+
+	// DYNAMICS COMPONENTS
+	import IntroSectionCustom from '$lib/components/Home/DynamicComponents/IntroSectionCustom.svelte';
+	const dynamicsCompoenents = {
+		IntroSectionCustom: IntroSectionCustom
+	};
+	$: $dynamicComponent;
+
 	export const title = 'Stefan Dörger';
 	export const subTitle = 'Software Development';
-
 </script>
 
 <div class="relative">
@@ -28,8 +33,9 @@
 				<h2 class="text-4xl">
 					{$dynamicSubTitle}
 				</h2>
-				<!-- dynamic component -->
-				<svelte:component this={IntroSectionCustom}/>
+
+				<svelte:component this={dynamicsCompoenents[$dynamicComponent]} />
+				<!-- <svelte:component this={asdf} /> -->
 			</div>
 		</div>
 	</div>

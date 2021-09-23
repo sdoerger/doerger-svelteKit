@@ -33,7 +33,6 @@
 	}}
 	on:change={(event) => {
 		const { scrollDirection } = event.detail;
-		console.log(scrollDirection);
 	}}
 >
 	<slot />
