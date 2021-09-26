@@ -21,6 +21,7 @@
 	function updateTitles() {
 		updateTitle(sectionTitle);
 		updateSubTitle(sectionSubtitle);
+		updateComponent(sectionComponent);
 	}
 </script>
 

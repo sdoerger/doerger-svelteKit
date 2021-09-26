@@ -1,7 +1,4 @@
 <script lang="ts">
-	// SVELTE
-	// import { onMount } from 'svelte';
-
 	// STORE
 	import { dynamicTitle, dynamicSubTitle, dynamicComponent } from '$stores/dynamicTitle';
 
@@ -10,8 +7,10 @@
 
 	// DYNAMICS COMPONENTS
 	import IntroSectionCustom from '$lib/components/Home/DynamicComponents/IntroSectionCustom.svelte';
+	import ServiceSectionCustom from '$lib/components/Home/DynamicComponents/ServiceSectionCustom.svelte';
 	const dynamicsCompoenents = {
-		IntroSectionCustom: IntroSectionCustom
+		IntroSectionCustom: IntroSectionCustom,
+		ServiceSectionCustom: ServiceSectionCustom
 	};
 	$: $dynamicComponent;
 

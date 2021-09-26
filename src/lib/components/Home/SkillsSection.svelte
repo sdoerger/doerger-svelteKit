@@ -9,10 +9,12 @@
 </script>
 
 <ScrollSpy {sectionTitle} sectionSubtitle="Programmiersprachen">
-	<section
-		class="index-section"
-	>
+	<section class="index-section">
 		<div class="mb-10">
+			<h2 class="tracking-tighter font-bold uppercase leading-none md:mx-auto font-josefinSans">
+				Languages
+			</h2>
+
 			<p>Hier eine Auswahl der Programmiersprachen die ich täglich nutze.</p>
 			<SkillsLanguages />
 		</div>
@@ -20,10 +22,12 @@
 </ScrollSpy>
 
 <ScrollSpy {sectionTitle} sectionSubtitle="Frameworks/Libraries">
-	<section
-		class="index-section"
-	>
+	<section class="index-section">
 		<div class="mb-10">
+			<h2 class="tracking-tighter font-bold uppercase leading-none md:mx-auto font-josefinSans">
+				Frameworks
+			</h2>
+
 			<p>Hier eine Auswahl der Programmiersprachen die ich täglich nutze.</p>
 
 			<SkillsFrameworks />

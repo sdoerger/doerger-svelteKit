@@ -11,6 +11,6 @@ export const updateTitle = (title) => {
 };
 
 export const dynamicComponent = writable('IntroSectionCustom');
-export const updateComponent = (subTitle) => {
-	dynamicSubTitle.set(subTitle);
+export const updateComponent = (compoenentTitle) => {
+	dynamicComponent.set(compoenentTitle);
 };

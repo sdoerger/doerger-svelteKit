@@ -2,10 +2,12 @@
 	import ScrollSpy from '$lib/components/Elements/ScrollSpy.svelte';
 </script>
 
-<ScrollSpy sectionTitle="Stefan Dörger" sectionSubtitle="JavaScript Developer">
+<ScrollSpy sectionTitle="Stefan Dörger" sectionSubtitle="JavaScript Developer" sectionComponent="IntroSectionCustom">
 	<section class="index-section">
 		<div class="mb-10">
-			<h2 class="">Intro</h2>
+			<h2 class="tracking-tighter font-bold uppercase leading-none md:mx-auto font-josefinSans">
+				Intro
+			</h2>
 			<h3 class="mb-10">... Von Ihrer Idee</h3>
 			<p class="mb-10">
 				Hi, ich bin Stefan, Software-Entwickler (Fullstack Web-Development) mit 4 Jahren Erfahrung.
