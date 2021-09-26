@@ -22,20 +22,22 @@
 <div class="relative">
 	<div class="bg-sdGreen-400 relative lg:fixed w-full lg:w-1/2 lg:min-h-screen inset-0">
 		<div class="absolute px-12 pt-36 lg:top-16 lg:left-0 lg:p-20 text-white">
-			<div
-				class="tracking-tighter font-bold uppercase leading-none md:mx-auto font-josefinSans text-sdDarkGrey-400"
-			>
-				<h1 class="text-7xl mb-12">
-					<!-- {title} -->
-					{$dynamicTitle}
-				</h1>
-				<!-- {sub-title} -->
-				<h2 class="text-4xl">
-					{$dynamicSubTitle}
-				</h2>
-
-				<svelte:component this={dynamicsCompoenents[$dynamicComponent]} />
-				<!-- <svelte:component this={asdf} /> -->
+			<div class="relative flex flex-col justify-between">
+				<div
+					class="tracking-tighter font-bold uppercase leading-none md:mx-auto font-josefinSans text-sdDarkGrey-400"
+				>
+					<h1 class="text-7xl mb-12">
+						<!-- {title} -->
+						{$dynamicTitle}
+					</h1>
+					<!-- {sub-title} -->
+					<h2 class="text-4xl">
+						{$dynamicSubTitle}
+					</h2>
+				</div>
+				<div class="absolute top-52">
+					<svelte:component this={dynamicsCompoenents[$dynamicComponent]} />
+				</div>
 			</div>
 		</div>
 	</div>
