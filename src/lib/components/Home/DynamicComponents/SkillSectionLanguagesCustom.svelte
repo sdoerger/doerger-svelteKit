@@ -55,7 +55,7 @@
 <style>
 	path {
 		/* stroke: black; */
-		stroke-width: 4;
+		stroke-width: 6;
 		/* fill: none; */
 		opacity: 1;
 	}
