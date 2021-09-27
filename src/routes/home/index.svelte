@@ -4,6 +4,12 @@
 	import SkillsSection from '$lib/components/Home/SkillsSection.svelte';
 </script>
 
-<IntroSection />
-<ServiceSection />
-<SkillsSection />
+<div class="min-h-screen">
+	<IntroSection />
+</div>
+<div class="min-h-screen">
+	<ServiceSection />
+</div>
+<div class="min-h-screen">
+	<SkillsSection />
+</div>

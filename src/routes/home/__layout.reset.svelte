@@ -19,8 +19,8 @@
 </script>
 
 <div class="relative">
-	<div class="bg-sdGreen-400 relative lg:fixed w-full lg:w-1/2 lg:min-h-screen inset-0">
-		<div class="absolute px-12 pt-36 lg:top-16 lg:left-0 lg:p-20 text-white">
+	<div class="bg-sdGreen-400 relative lg:fixed w-full lg:w-1/2 lg:min-h-screen lg:inset-0">
+		<div class="lg:absolute px-12 pt-36 lg:top-16 lg:left-0 lg:p-20 text-white">
 			<div class="relative flex flex-col justify-between">
 				<div
 					class="tracking-tighter font-bold uppercase leading-none md:mx-auto font-josefinSans text-sdDarkGrey-400"
