@@ -8,7 +8,11 @@
 	const sectionTitle = 'Skills';
 </script>
 
-<ScrollSpy {sectionTitle} sectionSubtitle="Programmiersprachen">
+<ScrollSpy
+	{sectionTitle}
+	sectionSubtitle="Programmiersprachen"
+	sectionComponent="SkillSectionLanguagesCustom"
+>
 	<section class="index-section">
 		<div class="mb-10">
 			<h2 class="tracking-tighter font-bold uppercase leading-none md:mx-auto font-josefinSans">
@@ -21,7 +25,7 @@
 	</section>
 </ScrollSpy>
 
-<ScrollSpy {sectionTitle} sectionSubtitle="Frameworks/Libraries">
+<ScrollSpy {sectionTitle} sectionSubtitle="Frameworks/Libraries" 	sectionComponent="SkillSectionFrameworksCustom">
 	<section class="index-section">
 		<div class="mb-10">
 			<h2 class="tracking-tighter font-bold uppercase leading-none md:mx-auto font-josefinSans">

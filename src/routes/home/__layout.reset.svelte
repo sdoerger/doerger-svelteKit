@@ -8,9 +8,14 @@
 	// DYNAMICS COMPONENTS
 	import IntroSectionCustom from '$lib/components/Home/DynamicComponents/IntroSectionCustom.svelte';
 	import ServiceSectionCustom from '$lib/components/Home/DynamicComponents/ServiceSectionCustom.svelte';
+	import SkillSectionLanguagesCustom from '$lib/components/Home/DynamicComponents/SkillSectionLanguagesCustom.svelte';
+	import SkillSectionFrameworksCustom from '$lib/components/Home/DynamicComponents/SkillSectionFrameworksCustom.svelte';
+
 	const dynamicsCompoenents = {
-		IntroSectionCustom: IntroSectionCustom,
-		ServiceSectionCustom: ServiceSectionCustom
+		IntroSectionCustom,
+		ServiceSectionCustom,
+		SkillSectionLanguagesCustom,
+		SkillSectionFrameworksCustom
 	};
 	$: $dynamicComponent;
 

@@ -2,7 +2,11 @@
 	import ScrollSpy from '$lib/components/Elements/ScrollSpy.svelte';
 </script>
 
-<ScrollSpy sectionTitle="Services" sectionSubtitle="Web Apps und Sites" sectionComponent="ServiceSectionCustom">
+<ScrollSpy
+	sectionTitle="Services"
+	sectionSubtitle="Web Apps und Sites"
+	sectionComponent="ServiceSectionCustom"
+>
 	<section class="index-section">
 		<div class="mb-10">
 			<h2 class="tracking-tighter font-bold uppercase leading-none md:mx-auto font-josefinSans">
