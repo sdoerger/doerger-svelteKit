@@ -14,25 +14,31 @@
 	sectionComponent="SkillSectionLanguagesCustom"
 >
 	<section class="index-section">
-		<div class="mb-10">
-			<h2 class="tracking-tighter font-bold uppercase leading-none md:mx-auto font-josefinSans">
-				Languages
+		<div class="mb-6">
+			<h2
+				class="pb-8 tracking-tighter font-bold uppercase leading-none md:mx-auto font-josefinSans"
+			>
+				Programmiersprachen
 			</h2>
-
-			<p>Hier eine Auswahl der Programmiersprachen die ich täglich nutze.</p>
+			<p class="mb-16">Hier eine Auswahl der Programmiersprachen die ich täglich nutze.</p>
 			<SkillsLanguages />
 		</div>
 	</section>
 </ScrollSpy>
 
-<ScrollSpy {sectionTitle} sectionSubtitle="Frameworks/Libraries" 	sectionComponent="SkillSectionFrameworksCustom">
+<ScrollSpy
+	{sectionTitle}
+	sectionSubtitle="Frameworks/Libraries"
+	sectionComponent="SkillSectionFrameworksCustom"
+>
 	<section class="index-section">
-		<div class="mb-10">
-			<h2 class="tracking-tighter font-bold uppercase leading-none md:mx-auto font-josefinSans">
+		<div class="mt-28 mb-6">
+			<h2
+				class="pb-8 tracking-tighter font-bold uppercase leading-none md:mx-auto font-josefinSans"
+			>
 				Frameworks
 			</h2>
-
-			<p>Hier eine Auswahl der Programmiersprachen die ich täglich nutze.</p>
+			<p class="mb-16">Hier eine Auswahl der Frameworks die ich täglich nutze.</p>
 
 			<SkillsFrameworks />
 		</div>
