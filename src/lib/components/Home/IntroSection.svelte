@@ -5,7 +5,7 @@
 <ScrollSpy sectionTitle="Stefan Dörger" sectionSubtitle="JavaScript Developer" sectionComponent="IntroSectionCustom">
 	<section class="index-section">
 		<div class="mb-10">
-			<h2 class="tracking-tighter font-bold uppercase leading-none md:mx-auto font-josefinSans">
+			<h2 class="pb-20 tracking-tighter font-bold uppercase leading-none md:mx-auto font-josefinSans">
 				Intro
 			</h2>
 			<h3 class="mb-10">... Von Ihrer Idee</h3>
