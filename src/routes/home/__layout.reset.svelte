@@ -19,20 +19,25 @@
 	};
 	$: $dynamicComponent;
 
+	let screenWidth;
+
 	export const title = 'Stefan Dörger';
 	export const subTitle = 'Software Development';
 </script>
 
+<svelte:window bind:innerWidth={screenWidth} />
+
 <div class="relative">
-	<div class="bg-sdGreen-400 relative lg:fixed w-full lg:w-1/2 lg:min-h-screen lg:inset-0">
-		<div class="lg:absolute px-12 pt-36 lg:top-16 lg:left-0 lg:p-20 text-white  h-full">
+	<div class="bg-sdGreen-400 fixed w-full lg:w-1/2 lg:min-h-screen lg:inset-0">
+		<div class="lg:absolute px-12 pt-6 md:pt-12 lg:pt-36 lg:top-16 lg:left-0 lg:p-20 text-white  h-full">
 			<div class="flex flex-col justify-between h-full pb-10">
 				<div
 					class="tracking-tighter font-bold uppercase leading-none md:mx-auto font-josefinSans text-sdDarkGrey-400"
 				>
-					<h1 class="text-7xl">
+					<h1 class="lg:text-7xl pb-8">
 						<!-- {title} -->
 						{$dynamicTitle}
+						{screenWidth}
 					</h1>
 					<!-- {sub-title} -->
 					<h2 class="text-4xl">
@@ -41,7 +46,9 @@
 				</div>
 				<div class="">
 					<!-- <div class="absolute top-52"> -->
-					<svelte:component this={dynamicsCompoenents[$dynamicComponent]} />
+					{#if screenWidth >= 1024}
+						<svelte:component this={dynamicsCompoenents[$dynamicComponent]} />
+					{/if}
 				</div>
 			</div>
 		</div>
