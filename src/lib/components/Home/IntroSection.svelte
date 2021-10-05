@@ -1,11 +1,28 @@
 <script lang="ts">
 	import ScrollSpy from '$lib/components/Elements/ScrollSpy.svelte';
+	import IntroSectionCustom from './DynamicComponents/IntroSectionCustom.svelte';
+
+	let screenWidth;
+	const svgColor = 'text-sdGreen-400';
 </script>
 
-<ScrollSpy sectionTitle="Stefan Dörger" sectionSubtitle="JavaScript Developer" sectionComponent="IntroSectionCustom">
+<svelte:window bind:innerWidth={screenWidth} />
+
+<ScrollSpy
+	sectionTitle="Stefan Dörger"
+	sectionSubtitle="JavaScript Developer"
+	sectionComponent="IntroSectionCustom"
+>
 	<section class="index-section">
+		<div class="mx-20 my-12">
+			{#if screenWidth <= 1024}
+				<svelte:component this={IntroSectionCustom} {svgColor} />
+			{/if}
+		</div>
 		<div class="mb-6">
-			<h2 class="pb-8 tracking-tighter font-bold uppercase leading-none md:mx-auto font-josefinSans">
+			<h2
+				class="pb-8 tracking-tighter font-bold uppercase leading-none md:mx-auto font-josefinSans"
+			>
 				Intro
 			</h2>
 			<h3 class="pb-4">... Von Ihrer Idee</h3>

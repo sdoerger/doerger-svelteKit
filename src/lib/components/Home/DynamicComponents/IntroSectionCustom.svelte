@@ -1,10 +1,10 @@
 <script>
 	import { fade, draw } from 'svelte/transition';
-
 	import { onMount } from 'svelte';
 
-	let svgFill = 'none';
+	export let svgColor;
 
+	let svgFill = 'none';
 	let svgVisible = false;
 
 	onMount(async () => {
@@ -14,7 +14,7 @@
 
 {#if svgVisible}
 	<svg
-		class="h-56 w-56 fill-current text-sdDarkGrey-400 stroke-current"
+		class="h-56 w-56 fill-current {svgColor} stroke-current"
 		id="Capa_1"
 		enable-background="new 0 0 512 512"
 		height="512"
