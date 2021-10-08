@@ -41,7 +41,7 @@
               sm:space-y-0
             "
 			>
-				sd
+				<p class="text-sdGreen-400">sd</p>
 			</div>
 		</div>
 	</div>

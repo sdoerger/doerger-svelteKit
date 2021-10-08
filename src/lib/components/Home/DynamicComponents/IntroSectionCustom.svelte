@@ -14,7 +14,7 @@
 
 {#if svgVisible}
 	<svg
-		class="h-56 w-56 fill-current {svgColor} stroke-current"
+		class="h-56 w-56 {svgColor} fill-current stroke-current"
 		id="Capa_1"
 		enable-background="new 0 0 512 512"
 		height="512"

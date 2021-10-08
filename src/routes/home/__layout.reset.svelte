@@ -31,7 +31,7 @@
 <div class="relative">
 	<div class="bg-sdGreen-400 fixed w-full lg:w-1/2 lg:min-h-screen lg:inset-0">
 		<div
-			class="lg:absolute px-12 pt-6 md:pt-12 lg:pt-36 lg:top-16 lg:left-0 lg:p-20 text-white  h-full"
+			class="lg:absolute px-12 pt-6 lg:pt-12 xl:pt-36 lg:top-16 lg:left-0 lg:p-20 text-white  h-full"
 		>
 			<div class="flex flex-col justify-between h-full pb-10">
 				<div
