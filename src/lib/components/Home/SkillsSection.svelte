@@ -13,7 +13,7 @@
 	sectionSubtitle="Programmiersprachen"
 	sectionComponent="SkillSectionLanguagesCustom"
 >
-	<section class="index-section">
+	<section id="skill-section" class="index-section">
 		<div class="mb-6">
 			<h2
 				class="pb-8 tracking-tighter font-bold uppercase leading-none md:mx-auto font-josefinSans"

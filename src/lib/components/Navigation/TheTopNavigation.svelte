@@ -1,3 +1,37 @@
+<script lang="ts">
+	import { page } from '$app/stores';
+	import { dynamicComponent } from '$stores/dynamicTitle';
+
+	$: $dynamicComponent;
+	console.log($page);
+
+	const menuItems = [
+		{
+			label: 'Home',
+			path: '/home#intro-section',
+			dynamicComponent: ['IntroSectionCustom']
+		},
+		{
+			label: 'Services',
+			path: '/home#skill-section',
+			dynamicComponent: ['ServiceSectionCustom']
+		},
+		{
+			label: 'Skills',
+			path: '/home#skill-section',
+			dynamicComponent: ['SkillSectionLanguagesCustom', 'SkillSectionFrameworksCustom']
+		}
+	];
+
+	function currentSection(currenPath: string, dynamicComponents: Array<string>): boolean {
+		for (const component of dynamicComponents) {
+			if (currenPath == component) {
+				return true;
+			}
+		}
+	}
+</script>
+
 <div>
 	<div
 		class="
@@ -32,17 +66,27 @@
           "
 		>
 			<div
-				class="
-              flex flex-col
-              sm:flex-row
-              justify-between
-              items
-              space-y-3
-              sm:space-y-0
+				class="flex flex-col sm:flex-row justify-items-start space-y-3 space-x-6 sm:space-y-0
             "
 			>
-				<p class="text-sdGreen-400">sd</p>
+				<!-- <p class="text-sdGreen-400">sd</p>
+				<p class:active={$page.path === '/home#skill-section'}>
+					<a sveltekit:prefetch href="/home#skill-section">Home</a>
+				</p> -->
+				{#each menuItems as item}
+					<div class:active={currentSection($dynamicComponent, item.dynamicComponent)}>
+						<a sveltekit:prefetch href="/home#skill-section">{item.label}</a>
+					</div>
+				{/each}
+				<!-- <p class:active={$page.path === '/about'}><a sveltekit:prefetch href="/about">About</a></p>
+				<p class:active={$page.path === '/todos'}><a sveltekit:prefetch href="/todos">Todos</a></p> -->
 			</div>
 		</div>
 	</div>
 </div>
+
+<style lang="postcss">
+	.active {
+		@apply text-sdGreen-400 font-bold;
+	}
+</style>
