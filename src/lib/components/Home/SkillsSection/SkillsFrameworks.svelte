@@ -7,7 +7,6 @@
 	import iconGit from '$lib/assets/img/icons/git.svg';
 	import iconBootstrap from '$lib/assets/img/icons/bootstrap.svg';
 	import iconLinux from '$lib/assets/img/icons/ubuntu.svg';
-	import iconPuppeteer from '$lib/assets/img/icons/puppeteer.svg';
 	import iconSvelte from '$lib/assets/img/icons/svelte.svg';
 
 	const frameworkIcons = {
@@ -19,8 +18,7 @@
 		nodejs: iconNodejs,
 		git: iconGit,
 		bootstrap: iconBootstrap,
-		ubuntu: iconLinux,
-		puppeteer: iconPuppeteer
+		ubuntu: iconLinux
 	};
 
 	const codingFrameworks = [
@@ -75,12 +73,6 @@
 		{
 			label: 'Vite',
 			icon: 'vitejs',
-			level: '1',
-			link: ''
-		},
-		{
-			label: 'Puppeteer/Playwright',
-			icon: 'puppeteer',
 			level: '1',
 			link: ''
 		}
