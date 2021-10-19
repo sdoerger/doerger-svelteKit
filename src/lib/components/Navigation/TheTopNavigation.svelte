@@ -32,7 +32,7 @@
 	}
 </script>
 
-<div>
+<div class="ml-8 lg:ml-0">
 	<div
 		class="
           flex
@@ -66,7 +66,7 @@
           "
 		>
 			<div
-				class="flex flex-col sm:flex-row justify-items-start space-y-3 space-x-6 sm:space-y-0
+				class="flex flex-col sm:flex-row justify-items-start space-y-3 lg:space-x-6 sm:space-y-0
             "
 			>
 				<!-- <p class="text-sdGreen-400">sd</p>
