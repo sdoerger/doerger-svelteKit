@@ -32,13 +32,13 @@
 	}
 </script>
 
-<div class="ml-8 lg:ml-0">
+<div class=" lg:ml-0">
 	<div
-		class="
+		class="lg:bg-transparent
           flex
           justify-between
           w-full
-          h-14
+          h-16
           pt-3
           px-6
           fixed
@@ -49,7 +49,7 @@
 	<div class="relative justify-end">
 		<div class="w-full lg:w-1/2 ml-auto" />
 		<div
-			class="
+			class="bg-gradient-to-b from-sdDarkGrey-400 via-sdDarkGrey-400 to-transparent
             z-20
             md:z-10
             fixed
@@ -66,7 +66,7 @@
           "
 		>
 			<div
-				class="flex flex-col sm:flex-row justify-items-start space-y-3 lg:space-x-6 sm:space-y-0
+				class="flex flex-col sm:flex-row justify-items-start space-y-3 sm:space-x-6 sm:space-y-0
             "
 			>
 				<!-- <p class="text-sdGreen-400">sd</p>
