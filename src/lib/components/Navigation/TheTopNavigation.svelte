@@ -5,6 +5,12 @@
 	$: $dynamicComponent;
 	console.log($page);
 
+	// let toggleState = false;
+	$: toggleState = false;
+	function toggleMenu(toggleTo: boolean) {
+		toggleState = toggleTo;
+	}
+
 	const menuItems = [
 		{
 			label: 'Home',
@@ -32,58 +38,74 @@
 	}
 </script>
 
-<div class=" lg:ml-0">
-	<div
-		class="lg:bg-transparent
-          flex
-          justify-between
-          w-full
-          h-16
-          pt-3
-          px-6
-          fixed
-          z-20
-          sm:hidden
-        "
-	/>
-	<div class="relative justify-end">
-		<div class="w-full lg:w-1/2 ml-auto" />
+<div class="flex justify-end items-center flex-wrap z-30 fixed top-4 right-4">
+	{#if toggleState === false}
+		<div class="h-8" on:click={() => toggleMenu(true)}>
+			<div class="w-8 border-b-4 mb-1 border-sdGreen-800" />
+			<div class="w-6 border-b-4 mb-1 border-sdGreen-800" />
+			<div class="w-8 border-b-4 mb-1 border-sdGreen-800" />
+		</div>
+	{/if}
+	{#if toggleState === true}
+		<div class="h-8" on:click={() => toggleMenu(false)}>
+			<div class="w-8 border-b-4 mb-1 border-sdGreen-800 transform -rotate-45 relative top-4" />
+			<div class="w-8 border-b-4 mb-1 border-sdGreen-800 transform rotate-45 relative top-2" />
+		</div>
+	{/if}
+</div>
+
+{#if toggleState === true}
+	<div class="lg:ml-0 transition-all duration-1500 ease-in-out">
 		<div
-			class="bg-gradient-to-b from-sdDarkGrey-400 via-sdDarkGrey-400 to-transparent
-            z-20
-            md:z-10
-            fixed
-            w-full
-            mt-14
-            sm:mt-0
-            lg:w-1/2
-            ml-auto
-            py-3
-            sm:py-2
-            px-12
-            sm:px-24
-            sm:h-12
-          "
-		>
+			class="lg:bg-transparent
+	flex
+	justify-between
+	w-full
+	h-16
+	pt-3
+	px-6
+	fixed
+	z-20
+	sm:hidden
+	"
+		/>
+		<div class="relative justify-end">
+			<div class="w-full lg:w-1/2 ml-auto" />
 			<div
-				class="flex flex-col sm:flex-row justify-items-start space-y-3 sm:space-x-6 sm:space-y-0
-            "
+				class="
+		bg-gradient-to-b
+		from-sdDarkGrey-400
+		via-sdDarkGrey-400 to-transparent
+		z-20
+		md:z-10
+		fixed
+		w-full
+		pt-5
+		md:mt-2
+		xl:mt-0
+		lg:w-1/2
+		ml-auto
+		px-12
+		sm:px-24
+		h-full
+		sm:h-24
+		"
 			>
-				<!-- <p class="text-sdGreen-400">sd</p>
-				<p class:active={$page.path === '/home#skill-section'}>
-					<a sveltekit:prefetch href="/home#skill-section">Home</a>
-				</p> -->
-				{#each menuItems as item}
-					<div class:active={currentSection($dynamicComponent, item.dynamicComponent)}>
-						<a sveltekit:prefetch href="/home#skill-section">{item.label}</a>
-					</div>
-				{/each}
-				<!-- <p class:active={$page.path === '/about'}><a sveltekit:prefetch href="/about">About</a></p>
+				<div
+					class="flex flex-col sm:flex-row justify-items-start space-y-3 sm:space-x-6 sm:space-y-0 text-center mt-6 text-xl"
+				>
+					{#each menuItems as item}
+						<div class:active={currentSection($dynamicComponent, item.dynamicComponent)}>
+							<a sveltekit:prefetch href="/home#skill-section">{item.label}</a>
+						</div>
+					{/each}
+					<!-- <p class:active={$page.path === '/about'}><a sveltekit:prefetch href="/about">About</a></p>
 				<p class:active={$page.path === '/todos'}><a sveltekit:prefetch href="/todos">Todos</a></p> -->
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
+{/if}
 
 <style lang="postcss">
 	.active {
