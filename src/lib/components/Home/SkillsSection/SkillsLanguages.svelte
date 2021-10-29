@@ -70,7 +70,7 @@
 	];
 </script>
 
-<div class="grid grid-cols-3 justify-items-center gap-4">
+<div class="px-10 grid grid-cols-3 justify-items-center gap-4">
 	{#each codingLanguages as codingLanguage}
 		<div class="text-center">
 			<img

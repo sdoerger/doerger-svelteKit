@@ -4,6 +4,7 @@
 	import { onMount } from 'svelte';
 
 	let svgFill = 'none';
+	export let svgColor;
 
 	let svgVisible = false;
 

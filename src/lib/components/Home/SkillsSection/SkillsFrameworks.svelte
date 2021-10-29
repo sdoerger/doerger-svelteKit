@@ -79,7 +79,7 @@
 	];
 </script>
 
-<div class="grid grid-cols-3 justify-items-center gap-4">
+<div class="px-10 grid grid-cols-3 justify-items-center gap-4">
 	{#each codingFrameworks as codingFramework}
 		<!-- <div class="bg-red-400 border border-blue-400">
 			{codingFramework.label}

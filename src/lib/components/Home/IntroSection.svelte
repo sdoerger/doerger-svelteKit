@@ -14,7 +14,7 @@
 	sectionComponent="IntroSectionCustom"
 >
 	<section class="index-section">
-		<div class="mx-20 my-12">
+		<div class="mx-16 my-12">
 			{#if screenWidth <= 1024}
 				<svelte:component this={IntroSectionCustom} {svgColor} />
 			{/if}

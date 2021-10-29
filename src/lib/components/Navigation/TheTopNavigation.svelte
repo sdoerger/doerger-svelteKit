@@ -38,23 +38,23 @@
 	}
 </script>
 
-<div class="flex justify-end items-center flex-wrap z-30 fixed top-4 right-4">
-	{#if toggleState === false}
+<div class="lg:invisible flex justify-end items-center flex-wrap z-30 fixed top-4 right-4">
+	<!-- {#if toggleState === false} -->
 		<div class="h-8" on:click={() => toggleMenu(true)}>
 			<div class="w-8 border-b-4 mb-1 border-sdGreen-800" />
 			<div class="w-6 border-b-4 mb-1 border-sdGreen-800" />
 			<div class="w-8 border-b-4 mb-1 border-sdGreen-800" />
 		</div>
-	{/if}
-	{#if toggleState === true}
+	<!-- {/if} -->
+	<!-- {#if toggleState === true} -->
 		<div class="h-8" on:click={() => toggleMenu(false)}>
 			<div class="w-8 border-b-4 mb-1 border-sdGreen-800 transform -rotate-45 relative top-4" />
 			<div class="w-8 border-b-4 mb-1 border-sdGreen-800 transform rotate-45 relative top-2" />
 		</div>
-	{/if}
+	<!-- {/if} -->
 </div>
 
-{#if toggleState === true}
+<!-- {#if toggleState === true} -->
 	<div class="lg:ml-0 transition-all duration-1500 ease-in-out">
 		<div
 			class="lg:bg-transparent
@@ -105,7 +105,7 @@
 			</div>
 		</div>
 	</div>
-{/if}
+<!-- {/if} -->
 
 <style lang="postcss">
 	.active {
