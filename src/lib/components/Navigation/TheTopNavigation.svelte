@@ -86,13 +86,13 @@
 		lg:w-1/2
 		ml-auto
 		px-12
-		sm:px-24
+		lg:px-24
 		h-full
-		sm:h-24
+		lg:h-24
 		"
 			>
 				<div
-					class="flex flex-col sm:flex-row justify-items-start space-y-3 sm:space-x-6 sm:space-y-0 text-center mt-6 text-xl"
+					class="flex flex-col lg:flex-row justify-items-start space-y-3 lg:space-x-6 lg:space-y-0 text-center mt-6 text-xl"
 				>
 					{#each menuItems as item}
 						<div class:active={currentSection($dynamicComponent, item.dynamicComponent)}>
