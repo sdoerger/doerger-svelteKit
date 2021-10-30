@@ -1,16 +1,16 @@
 import { writable } from 'svelte/store';
 
 export const dynamicTitle = writable('');
-export const updateSubTitle = (subTitle) => {
+export const updateSubTitle = (subTitle: string): void => {
 	dynamicSubTitle.set(subTitle);
 };
 
 export const dynamicSubTitle = writable('');
-export const updateTitle = (title) => {
+export const updateTitle = (title: string): void => {
 	dynamicTitle.set(title);
 };
 
 export const dynamicComponent = writable('IntroSectionCustom');
-export const updateComponent = (compoenentTitle) => {
+export const updateComponent = (compoenentTitle: string): void => {
 	dynamicComponent.set(compoenentTitle);
 };

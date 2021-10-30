@@ -15,7 +15,7 @@
 				Services
 			</h2>
 			<h3 class="pb-4">... Von Ihrer Idee</h3>
-			<p class="mb-16text-xl">
+			<p class="mb-16 text-xl">
 				Hi, ich bin Stefan, Software-Entwickler (Fullstack Web-Development) mit 4 Jahren Erfahrung.
 				Mein Beruf ist mein Hobby und umgekehrt: Ich liebe es, responsive Websites und Web-Apps zu
 				programmieren. Wichtig ist mir dabei, dass diese nicht wie aus Beton gemacht aussehen, mehr

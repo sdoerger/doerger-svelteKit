@@ -30,13 +30,6 @@
 
 	function currentSection(currenPath: string, dynamicComponents: Array<string>): boolean {
 		for (const component of dynamicComponents) {
-			console.log('component');
-			console.log(component);
-			console.log('currenPath');
-			console.log(currenPath);
-			console.log('-----------------------');
-			console.log('-----------------------');
-
 			if (currenPath == component) {
 				return true;
 			}
