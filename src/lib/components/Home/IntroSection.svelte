@@ -14,9 +14,18 @@
 	sectionComponent="IntroSectionCustom"
 >
 	<section class="index-section">
-		<div class="mx-16 my-12">
+		<div>
 			{#if screenWidth <= 1024}
-				<svelte:component this={IntroSectionCustom} {svgColor} />
+				<h2
+					class="tracking-tighter font-bold uppercase leading-none font-josefinSans text-sdDarkGrey-400 text-2xl"
+				>
+					JavaScript Developer
+				</h2>
+				<!-- {sub-title} -->
+
+				<div class="mx-12 my-12">
+					<svelte:component this={IntroSectionCustom} {svgColor} />
+				</div>
 			{/if}
 		</div>
 		<div class="mb-6">

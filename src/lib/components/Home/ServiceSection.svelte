@@ -7,7 +7,7 @@
 	sectionSubtitle="Web Apps und Sites"
 	sectionComponent="ServiceSectionCustom"
 >
-	<section class="index-section">
+	<section id="services-section" class="index-section">
 		<div class="mb-6">
 			<h2
 				class="pb-8 tracking-tighter font-bold uppercase leading-none md:mx-auto font-josefinSans"

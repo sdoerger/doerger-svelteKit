@@ -57,7 +57,7 @@
 	</div>
 	<div class="w-full bg-sdDarkGrey-400 lg:min-h-screen lg:w-1/2 ml-auto inset-0">
 		<TheTopNavigation />
-		<div class="py-36">
+		<div class="py-16 lg:py-36">
 			<slot />
 		</div>
 	</div>
