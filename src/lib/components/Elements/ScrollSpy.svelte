@@ -3,11 +3,7 @@
 	import { inview } from 'svelte-inview';
 
 	// Import store
-	import {
-		updateTitle,
-		updateSubTitle,
-		updateComponent
-	} from '$stores/dynamicTitle';
+	import { updateTitle, updateSubTitle, updateComponent } from '$stores/dynamicTitle';
 
 	let isInView;
 	const options = {};
@@ -34,6 +30,19 @@
 	}}
 	on:change={(event) => {
 		const { scrollDirection } = event.detail;
+	}}
+	on:leave={(event) => {
+		const { scrollDirection } = event.detail;
+		// Weird correction for mobile not updatiing intro component
+
+		if (
+			sectionComponent === 'ServiceSectionCustom' &&
+			event.detail.scrollDirection.vertical === 'down'
+		) {
+			updateTitle('Stefan Dörger');
+			updateSubTitle('JavaScript Developer');
+			updateComponent('IntroSectionCustom');
+		}
 	}}
 >
 	<slot />
