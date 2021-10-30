@@ -17,7 +17,7 @@
 		<div>
 			{#if screenWidth <= 1024}
 				<h2
-					class="tracking-tighter font-bold uppercase leading-none font-josefinSans text-sdDarkGrey-400 text-2xl"
+					class="tracking-tighter font-bold uppercase leading-none font-josefinSans text-sdDarkGrey-400 text-3xl mt-20"
 				>
 					JavaScript Developer
 				</h2>
@@ -30,7 +30,7 @@
 		</div>
 		<div class="mb-6">
 			<h2
-				class="pb-8 tracking-tighter font-bold uppercase leading-none md:mx-auto font-josefinSans"
+				class="pb-8 tracking-tighter font-bold uppercase leading-none md:mx-auto font-josefinSans text-3xl mt-20"
 			>
 				Intro
 			</h2>

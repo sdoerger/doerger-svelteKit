@@ -106,7 +106,10 @@
 				class="flex flex-col lg:flex-row justify-items-start space-y-3 lg:space-x-6 lg:space-y-0 text-center mt-6 text-xl"
 			>
 				{#each menuItems as item}
-					<div class:active={currentSection($dynamicComponent, item.dynamicComponent)}>
+					<div
+						class:active={currentSection($dynamicComponent, item.dynamicComponent)}
+						on:click={() => toggleMenu(false)}
+					>
 						<a sveltekit:prefetch href={item.path}>{item.label}</a>
 					</div>
 				{/each}

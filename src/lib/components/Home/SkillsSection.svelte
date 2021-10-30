@@ -16,7 +16,7 @@
 	<section id="skill-section" class="index-section">
 		<div class="mb-6">
 			<h2
-				class="pb-8 tracking-tighter font-bold uppercase leading-none md:mx-auto font-josefinSans"
+				class="pb-8 tracking-tighter font-bold uppercase leading-none md:mx-auto font-josefinSans text-3xl mt-20 break-words"
 			>
 				Programmiersprachen
 			</h2>
@@ -34,7 +34,7 @@
 	<section class="index-section">
 		<div class="mt-28 mb-6">
 			<h2
-				class="pb-8 tracking-tighter font-bold uppercase leading-none md:mx-auto font-josefinSans"
+				class="pb-8 tracking-tighter font-bold uppercase leading-none md:mx-auto font-josefinSans text-3xl mt-20"
 			>
 				Frameworks
 			</h2>
