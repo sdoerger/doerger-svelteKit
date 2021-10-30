@@ -37,7 +37,7 @@
 				<div
 					class="tracking-tighter font-bold uppercase leading-none md:mx-auto font-josefinSans text-sdDarkGrey-400"
 				>
-					<h1 class="lg:text-7xl pb-8">
+					<h1 class="lg:text-7xl pb-4">
 						<!-- {title} -->
 						{$dynamicTitle}
 					</h1>

@@ -30,7 +30,7 @@
 		</div>
 		<div class="mb-6">
 			<h2
-				class="pb-8 tracking-tighter font-bold uppercase leading-none md:mx-auto font-josefinSans text-3xl mt-20"
+				class="pb-4 tracking-tighter font-bold uppercase leading-none md:mx-auto font-josefinSans text-3xl mt-20"
 			>
 				Intro
 			</h2>

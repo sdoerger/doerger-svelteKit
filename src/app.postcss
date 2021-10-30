@@ -47,8 +47,16 @@
 		@apply text-sdlightGrey-50 lg:text-2xl;
 	}
 
-	.index-section {
-		scroll-margin-top: 36vw;
+	@media (max-width: 1024px) {
+		.index-section {
+			scroll-margin-top: 32vw;
+		}
+	}
+
+	@media (min-width: 1025px) {
+		.index-section {
+			scroll-margin-top: 12vw;
+		}
 	}
 }
 
