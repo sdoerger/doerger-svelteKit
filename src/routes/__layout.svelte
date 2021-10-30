@@ -1,46 +1,65 @@
 <script lang="ts">
-	import Header from '$lib/components/Navigation/Header.svelte';
 	import '../app.postcss';
+	// STORE
+	import { dynamicTitle, dynamicSubTitle, dynamicComponent } from '$stores/dynamicTitle';
+
+	// COMPONENTS
+	import TheTopNavigation from '$lib/components/Navigation/TheTopNavigation.svelte';
+
+	// DYNAMICS COMPONENTS
+	import IntroSectionCustom from '$lib/components/Home/DynamicComponents/IntroSectionCustom.svelte';
+	import ServiceSectionCustom from '$lib/components/Home/DynamicComponents/ServiceSectionCustom.svelte';
+	import SkillSectionLanguagesCustom from '$lib/components/Home/DynamicComponents/SkillSectionLanguagesCustom.svelte';
+	import SkillSectionFrameworksCustom from '$lib/components/Home/DynamicComponents/SkillSectionFrameworksCustom.svelte';
+
+	const dynamicsCompoenents = {
+		IntroSectionCustom,
+		ServiceSectionCustom,
+		SkillSectionLanguagesCustom,
+		SkillSectionFrameworksCustom
+	};
+	$: $dynamicComponent;
+
+	let screenWidth;
+
+	export const title = 'Stefan Dörger';
+	export const subTitle = 'Software Development';
+	const svgColor = 'text-sdDarkGrey-400';
 </script>
 
-<Header>
-	<main>
-		<slot />
-	</main>
+<svelte:window bind:innerWidth={screenWidth} />
 
-	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-	</footer>
-
-	<style>
-		main {
-			flex: 1;
-			display: flex;
-			flex-direction: column;
-			padding: 1rem;
-			width: 100%;
-			max-width: 1024px;
-			margin: 0 auto;
-			box-sizing: border-box;
-		}
-
-		footer {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			padding: 40px;
-		}
-
-		footer a {
-			font-weight: bold;
-		}
-
-		@media (min-width: 480px) {
-			footer {
-				padding: 40px 0;
-			}
-		}
-	</style>
-</Header>
-<slot />
+<div class="relative">
+	<div class="bg-sdGreen-400 fixed w-full invisible lg:visible lg:w-1/2 lg:min-h-screen lg:inset-0">
+		<div
+			class="lg:absolute px-12 pt-6 lg:pt-12 xl:pt-36 lg:top-16 lg:left-0 lg:p-20 text-white  h-full"
+		>
+			<div class="flex flex-col justify-between h-full pb-10">
+				<div
+					class="tracking-tighter font-bold uppercase leading-none md:mx-auto font-josefinSans text-sdDarkGrey-400"
+				>
+					<h1 class="lg:text-7xl pb-4">
+						<!-- {title} -->
+						{$dynamicTitle}
+					</h1>
+					<!-- {sub-title} -->
+					<h2 class="text-4xl lg:mt-5">
+						{$dynamicSubTitle}
+					</h2>
+				</div>
+				<div class="">
+					<!-- <div class="absolute top-52"> -->
+					{#if screenWidth >= 1024}
+						<svelte:component this={dynamicsCompoenents[$dynamicComponent]} {svgColor} />
+					{/if}
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="w-full bg-sdDarkGrey-400 lg:min-h-screen lg:w-1/2 ml-auto inset-0">
+		<TheTopNavigation />
+		<div class="py-16 lg:py-32">
+			<slot />
+		</div>
+	</div>
+</div>

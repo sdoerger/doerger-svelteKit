@@ -13,23 +13,30 @@
 	const menuItems = [
 		{
 			label: 'Home',
-			path: '/home#intro-section',
+			path: '/#intro-section',
 			dynamicComponent: ['IntroSectionCustom']
 		},
 		{
 			label: 'Services',
-			path: '/home#services-section',
+			path: '/#services-section',
 			dynamicComponent: ['ServiceSectionCustom']
 		},
 		{
 			label: 'Skills',
-			path: '/home#skill-section',
+			path: '/#skill-section',
 			dynamicComponent: ['SkillSectionLanguagesCustom', 'SkillSectionFrameworksCustom']
 		}
 	];
 
 	function currentSection(currenPath: string, dynamicComponents: Array<string>): boolean {
 		for (const component of dynamicComponents) {
+			console.log('component');
+			console.log(component);
+			console.log('currenPath');
+			console.log(currenPath);
+			console.log('-----------------------');
+			console.log('-----------------------');
+
 			if (currenPath == component) {
 				return true;
 			}
