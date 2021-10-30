@@ -42,7 +42,7 @@
 						{$dynamicTitle}
 					</h1>
 					<!-- {sub-title} -->
-					<h2 class="text-4xl">
+					<h2 class="text-4xl lg:mt-5">
 						{$dynamicSubTitle}
 					</h2>
 				</div>
@@ -57,7 +57,7 @@
 	</div>
 	<div class="w-full bg-sdDarkGrey-400 lg:min-h-screen lg:w-1/2 ml-auto inset-0">
 		<TheTopNavigation />
-		<div class="py-16 lg:py-36">
+		<div class="py-16 lg:py-32">
 			<slot />
 		</div>
 	</div>

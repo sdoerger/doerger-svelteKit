@@ -17,7 +17,7 @@
 		<div>
 			{#if screenWidth <= 1024}
 				<h2
-					class="tracking-tighter font-bold uppercase leading-none font-josefinSans text-sdDarkGrey-400 text-3xl mt-20"
+					class="tracking-tighter font-bold uppercase leading-none font-josefinSans text-sdDarkGrey-400 text-3xl mt-10"
 				>
 					JavaScript Developer
 				</h2>

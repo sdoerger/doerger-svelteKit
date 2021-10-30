@@ -90,7 +90,8 @@
 			md:z-10
 			fixed
 			w-full
-			pt-1
+			pt-10
+			lg:pt-1
 			xl:mt-0
 			lg:w-1/2
 			ml-auto
