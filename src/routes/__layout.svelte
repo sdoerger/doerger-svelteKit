@@ -38,12 +38,12 @@
 				<div
 					class="tracking-tighter font-bold uppercase leading-none md:mx-auto font-josefinSans text-sdDarkGrey-400"
 				>
-					<h1 class="lg:text-7xl pb-4">
+					<h1 class="lg:text-7xl pb-4 drop-shadow-md">
 						<!-- {title} -->
 						{$dynamicTitle}
 					</h1>
 					<!-- {sub-title} -->
-					<h2 class="text-4xl lg:mt-5">
+					<h2 class="text-4xl lg:mt-5 drop-shadow-md">
 						{$dynamicSubTitle}
 					</h2>
 				</div>
