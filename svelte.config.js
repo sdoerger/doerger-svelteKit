@@ -1,5 +1,6 @@
 import preprocess from 'svelte-preprocess';
 import { resolve } from 'path';
+import adapter from '@sveltejs/adapter-static';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -23,7 +24,13 @@ const config = {
 					$hooks: resolve('./src/hooks')
 				}
 			}
-		}
+		},
+		adapter: adapter({
+			// default options are shown
+			pages: 'build',
+			assets: 'build',
+			fallback: null
+		})
 	}
 };
 
