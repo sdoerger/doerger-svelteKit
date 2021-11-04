@@ -50,23 +50,23 @@
 			level: '2',
 			link: ''
 		},
-		{
-			label: 'Bash',
-			icon: 'bash',
-			level: '1',
-			link: ''
-		},
+		// {
+		// 	label: 'Bash',
+		// 	icon: 'bash',
+		// 	level: '1',
+		// 	link: ''
+		// },
 		{
 			label: 'MongoDB',
 			icon: 'mongodb',
 			level: '1',
 			link: ''
 		},
-		{
-			label: 'MySql',
-			icon: 'mysql',
-			level: '1'
-		}
+		// {
+		// 	label: 'MySql',
+		// 	icon: 'mysql',
+		// 	level: '1'
+		// }
 	];
 </script>
 
