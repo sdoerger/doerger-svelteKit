@@ -11,13 +11,13 @@
 	// Props
 	export let sectionTitle: string,
 		sectionSubtitle: string,
-		sectionComponent: string = '';
+		dynamicSVGs: string = '';
 
 	// Mutate titles
 	function updateTitles() {
 		updateTitle(sectionTitle);
 		updateSubTitle(sectionSubtitle);
-		updateComponent(sectionComponent);
+		updateComponent(dynamicSVGs);
 	}
 </script>
 
@@ -36,7 +36,7 @@
 		// Weird correction for mobile not updatiing intro component
 
 		if (
-			sectionComponent === 'ServiceSectionCustom' &&
+			dynamicSVGs === 'ServiceSectionCustom' &&
 			event.detail.scrollDirection.vertical === 'down'
 		) {
 			updateTitle('Stefan Dörger');

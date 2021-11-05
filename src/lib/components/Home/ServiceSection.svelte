@@ -5,7 +5,7 @@
 <ScrollSpy
 	sectionTitle="Services"
 	sectionSubtitle="Web Apps und Sites"
-	sectionComponent="ServiceSectionCustom"
+	dynamicSVGs="ServiceSectionCustom"
 >
 	<section id="services-section" class="index-section">
 		<div class="mb-6">

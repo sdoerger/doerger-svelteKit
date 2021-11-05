@@ -9,7 +9,7 @@
 <svelte:window bind:innerWidth={screenWidth} />
 
 <ScrollSpy
-	sectionTitle="Stefan Dörger"
+	sectionTitle="Arbeiten"
 	sectionSubtitle="JavaScript Developer"
 	dynamicSVGs="IntroSectionCustom"
 >
