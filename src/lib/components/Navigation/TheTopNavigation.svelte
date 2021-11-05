@@ -29,7 +29,7 @@
 		{
 			label: 'Arbeiten',
 			path: '/#skill-section',
-			dynamicComponent: ['SkillLanguagesSVG']
+			dynamicComponent: ['WorksSVG']
 		}
 	];
 
