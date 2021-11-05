@@ -1,6 +1,6 @@
 <script lang="ts">
 	import ScrollSpy from '$lib/components/Elements/ScrollSpy.svelte';
-	import IntroSectionCustom from './DynamicSVGs/IntroSectionCustom.svelte';
+	import IntroSVG from './DynamicSVGs/IntroSVG.svelte';
 
 	let screenWidth;
 	const svgColor = 'text-sdGreen-400';
@@ -11,7 +11,7 @@
 <ScrollSpy
 	sectionTitle="Stefan Dörger"
 	sectionSubtitle="JavaScript Developer"
-	dynamicSVGs="IntroSectionCustom"
+	dynamicSVGs="IntroSVG"
 >
 	<section class="index-section">
 		<div>
@@ -24,7 +24,7 @@
 				<!-- {sub-title} -->
 
 				<div class="mx-12 my-12">
-					<svelte:component this={IntroSectionCustom} {svgColor} />
+					<svelte:component this={IntroSVG} {svgColor} />
 				</div>
 			{/if}
 		</div>

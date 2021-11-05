@@ -7,16 +7,16 @@
 	import TheTopNavigation from '$lib/components/Navigation/TheTopNavigation.svelte';
 
 	// DYNAMICS COMPONENTS
-	import IntroSectionCustom from '$lib/components/Home/DynamicSVGs/IntroSectionCustom.svelte';
-	import ServiceSectionCustom from '$lib/components/Home/DynamicSVGs/ServiceSectionCustom.svelte';
-	import SkillSectionLanguagesCustom from '$lib/components/Home/DynamicSVGs/SkillSectionLanguagesCustom.svelte';
-	import SkillSectionFrameworksCustom from '$lib/components/Home/DynamicSVGs/SkillSectionFrameworksCustom.svelte';
+	import IntroSVG from '$lib/components/Home/DynamicSVGs/IntroSVG.svelte';
+	import ServiceSVG from '$lib/components/Home/DynamicSVGs/ServiceSVG.svelte';
+	import SkillLanguagesSVG from '$lib/components/Home/DynamicSVGs/SkillLanguagesSVG.svelte';
+	import SkillFrameworksSVG from '$lib/components/Home/DynamicSVGs/SkillFrameworksSVG.svelte';
 
 	const dynamicsCompoenents = {
-		IntroSectionCustom,
-		ServiceSectionCustom,
-		SkillSectionLanguagesCustom,
-		SkillSectionFrameworksCustom
+		IntroSVG,
+		ServiceSVG,
+		SkillLanguagesSVG,
+		SkillFrameworksSVG
 	};
 	$: $dynamicComponent;
 

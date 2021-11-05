@@ -14,22 +14,22 @@
 		{
 			label: 'Home',
 			path: '/#intro-section',
-			dynamicComponent: ['IntroSectionCustom']
+			dynamicComponent: ['IntroSVG']
 		},
 		{
 			label: 'Services',
 			path: '/#services-section',
-			dynamicComponent: ['ServiceSectionCustom']
+			dynamicComponent: ['ServiceSVG']
 		},
 		{
 			label: 'Skills',
 			path: '/#skill-section',
-			dynamicComponent: ['SkillSectionLanguagesCustom', 'SkillSectionFrameworksCustom']
+			dynamicComponent: ['SkillLanguagesSVG', 'SkillFrameworksSVG']
 		},
 		{
 			label: 'Arbeiten',
 			path: '/#skill-section',
-			dynamicComponent: ['SkillSectionLanguagesCustom']
+			dynamicComponent: ['SkillLanguagesSVG']
 		}
 	];
 

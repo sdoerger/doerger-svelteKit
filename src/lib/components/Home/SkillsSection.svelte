@@ -11,7 +11,7 @@
 <ScrollSpy
 	{sectionTitle}
 	sectionSubtitle="Programmiersprachen"
-	dynamicSVGs="SkillSectionLanguagesCustom"
+	dynamicSVGs="SkillLanguagesSVG"
 >
 	<section id="skill-section" class="index-section">
 		<div class="mb-6">
@@ -29,7 +29,7 @@
 <ScrollSpy
 	{sectionTitle}
 	sectionSubtitle="Frameworks/Libraries"
-	dynamicSVGs="SkillSectionFrameworksCustom"
+	dynamicSVGs="SkillFrameworksSVG"
 >
 	<section class="index-section">
 		<div class="mt-28 mb-6">

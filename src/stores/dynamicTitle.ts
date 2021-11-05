@@ -10,7 +10,7 @@ export const updateTitle = (title: string): void => {
 	dynamicTitle.set(title);
 };
 
-export const dynamicComponent = writable('IntroSectionCustom');
+export const dynamicComponent = writable('IntroSVG');
 export const updateComponent = (compoenentTitle: string): void => {
 	dynamicComponent.set(compoenentTitle);
 };

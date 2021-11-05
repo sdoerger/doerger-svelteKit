@@ -36,12 +36,12 @@
 		// Weird correction for mobile not updatiing intro component
 
 		if (
-			dynamicSVGs === 'ServiceSectionCustom' &&
+			dynamicSVGs === 'ServiceSVG' &&
 			event.detail.scrollDirection.vertical === 'down'
 		) {
 			updateTitle('Stefan Dörger');
 			updateSubTitle('JavaScript Developer');
-			updateComponent('IntroSectionCustom');
+			updateComponent('IntroSVG');
 		}
 	}}
 >
