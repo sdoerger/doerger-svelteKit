@@ -25,6 +25,11 @@
 			label: 'Skills',
 			path: '/#skill-section',
 			dynamicComponent: ['SkillSectionLanguagesCustom', 'SkillSectionFrameworksCustom']
+		},
+		{
+			label: 'Arbeiten',
+			path: '/#skill-section',
+			dynamicComponent: ['SkillSectionLanguagesCustom']
 		}
 	];
 
@@ -104,7 +109,7 @@
 		"
 		>
 			<div
-				class="flex flex-col lg:flex-row justify-items-start space-y-3 lg:space-x-6 lg:space-y-0 text-center mt-6 text-xl"
+				class="flex flex-col lg:flex-row justify-items-start space-y-3 lg:space-x-6 lg:space-y-0 text-center mt-6 text-xl text-sdGreen-800"
 			>
 				{#each menuItems as item}
 					<div
@@ -123,6 +128,6 @@
 
 <style lang="postcss">
 	.active {
-		@apply text-sdGreen-400 font-bold;
+		@apply text-sdGreen-400 font-bold border-b-2 border-sdGreen-800;
 	}
 </style>
