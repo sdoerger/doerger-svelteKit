@@ -1,6 +1,6 @@
 <script lang="ts">
 	import ScrollSpy from '$lib/components/Elements/ScrollSpy.svelte';
-	import IntroSectionCustom from './DynamicComponents/IntroSectionCustom.svelte';
+	import IntroSectionCustom from './DynamicSVGs/IntroSectionCustom.svelte';
 
 	let screenWidth;
 	const svgColor = 'text-sdGreen-400';
