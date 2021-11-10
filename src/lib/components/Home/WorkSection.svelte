@@ -2,6 +2,47 @@
 	import WorksSVG from './DynamicSVGs/WorksSVG.svelte';
 
 	import ScrollSpy from '$lib/components/Elements/ScrollSpy.svelte';
+
+	import { useSkills } from '$lib/hooks/useSkills';
+	// console.log(useSkills);
+
+	const workExamples: [] = [
+		{
+			title: 'Untitled Projet',
+			description: 'Social Communication App',
+			stack: [1, 8, 10, 16, 17],
+			link: 'https://publishbar.com',
+			status: 'Coming 2022'
+		},
+		{
+			title: 'Publishbar',
+			description: 'Task Management App',
+			stack: [1, 8, 10, 16, 17],
+			link: null,
+			status: 'Coming 2022'
+		},
+		{
+			title: 'World for Take Away',
+			description: 'Dev Blog and personal website',
+			stack: [2, 9, 10, 16, 18],
+			link: 'https://worldfortakeaway.com',
+			status: '2021'
+		},
+		{
+			title: 'doerger.net',
+			description: 'Travel Blog',
+			stack: [1, 11, 10, 16, 19],
+			link: 'https://doerger.net',
+			status: 'Live'
+		},
+		{
+			title: 'Applied Data Scene',
+			description: 'Static Website',
+			stack: [0, 2, 3, 14],
+			link: 'https://applieddatascience.de',
+			status: 'Live'
+		}
+	];
 </script>
 
 <ScrollSpy sectionTitle="Arbeiten" sectionSubtitle="Portfolio" dynamicSVGs="WorksSVG">
@@ -19,13 +60,30 @@
 				programmieren. Wichtig ist mir dabei, dass diese nicht wie aus Beton gemacht aussehen, mehr
 				können, als nur gut aussehen und ihre Besucher erreichen.
 			</p>
-			<h3 class="pb-4">... zu Ihrer Website</h3>
-			<p class="text-xl">
-				Für wen mache ich das? Für alle, deren Vision von Templates zerhackt wird und die
-				Funktionalität brauchen, die ein Baukasten nicht bietet. Ich biete einen Rundum-Service, von
-				der Plaung bis zum Hosting; mein Fokus liegt hierbei auf der Programmierung, Gestaltung und
-				Beratung.
-			</p>
+
+			<ul class="mb-16 text-xl">
+				{#each workExamples as work}
+					<li>
+						<div class="flex flex-col">
+							<div>{work.title}</div>
+							<div>{work.description}</div>
+
+							{#each work.stack as stack, index}
+								{#if index !== 0}
+									,
+								{/if}
+								{useSkills[stack].label}
+							{/each}
+							<li>
+								{work.status}
+							</li>
+							<li>
+								{work.link}
+							</li>
+						</div>
+					</li>
+				{/each}
+			</ul>
 		</div>
 	</section>
 </ScrollSpy>

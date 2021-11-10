@@ -177,17 +177,25 @@ export const useSkills: [] = [
 	{
 		type: 'library',
 		label: 'Pinia',
-		icon: 'vitejs',
+		icon: 'pinia',
 		level: '1',
 		link: '',
-		visibleToType: true
+		visibleToType: false
 	},
 	{
 		type: 'library',
 		label: 'Vuex',
-		icon: 'vitejs',
+		icon: 'vuex',
 		level: '1',
 		link: '',
-		visibleToType: true
+		visibleToType: false
+	},
+	{
+		type: 'library',
+		label: 'WebPack',
+		icon: 'webpack',
+		level: '1',
+		link: '',
+		visibleToType: false
 	}
 ];
