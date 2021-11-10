@@ -1,38 +1,16 @@
 <script lang="ts">
-	import ScrollSpy from '$lib/components/Elements/ScrollSpy.svelte';
 	import WorksSVG from './DynamicSVGs/WorksSVG.svelte';
 
-	let screenWidth;
-	const svgColor = 'text-sdGreen-400';
+	import ScrollSpy from '$lib/components/Elements/ScrollSpy.svelte';
 </script>
 
-<svelte:window bind:innerWidth={screenWidth} />
-
-<ScrollSpy
-	sectionTitle="Arbeiten"
-	sectionSubtitle="JavaScript Developer"
-	dynamicSVGs="WorksSVG"
->
-	<section class="index-section">
-		<div>
-			{#if screenWidth <= 1024}
-				<h2
-					class="tracking-tighter font-bold uppercase leading-none font-josefinSans text-sdDarkGrey-400 text-3xl mt-10"
-				>
-					JavaScript Developer
-				</h2>
-				<!-- {sub-title} -->
-
-				<div class="mx-12 my-12">
-					<svelte:component this={WorksSVG} {svgColor} />
-				</div>
-			{/if}
-		</div>
+<ScrollSpy sectionTitle="Arbeiten" sectionSubtitle="Portfolio" dynamicSVGs="WorksSVG">
+	<section id="services-section" class="index-section">
 		<div class="mb-6">
 			<h2
 				class="pb-4 tracking-tighter font-bold uppercase leading-none md:mx-auto font-josefinSans text-3xl mt-20"
 			>
-				Intro
+				Arbeiten
 			</h2>
 			<h3 class="pb-4">... Von Ihrer Idee</h3>
 			<p class="mb-16 text-xl">
