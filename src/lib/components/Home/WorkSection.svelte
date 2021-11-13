@@ -8,7 +8,7 @@
 
 	const workExamples: [] = [
 		{
-			title: 'Untitled Projet',
+			title: 'Publishbar',
 			description: 'Social Communication App',
 			stack: [1, 8, 10, 16, 17],
 			link: 'https://publishbar.com',
@@ -63,23 +63,36 @@
 
 			<ul class="mb-16 text-xl">
 				{#each workExamples as work}
-					<li>
+					<li class="mb-16">
 						<div class="flex flex-col">
-							<div>{work.title}</div>
-							<div>{work.description}</div>
-
-							{#each work.stack as stack, index}
-								{#if index !== 0}
-									,
-								{/if}
-								{useSkills[stack].label}
-							{/each}
-							<li>
-								{work.status}
-							</li>
-							<li>
-								{work.link}
-							</li>
+							<div class="text-sdGreen-800 mb-2">
+								<a class="underline" href={work.link}>{work.title}</a>
+								<span class="text-gray-500 ml-3 uppercase">// {work.description}</span>
+							</div>
+							<div class="text-gray-500 my-4 italic">
+								<span>/**</span>
+								<br />
+								<span>* technology used in project</span>
+								<br />
+								<span
+									>* <span class="text-blue-400">@</span><span class="text-purple-400">stack</span>
+									&#x2774;string&#x2775; – i. e.:
+								</span>
+								{#each work.stack as stack, index}
+									{#if index !== 0}
+										,
+									{/if}
+									{useSkills[stack].label}
+								{/each}
+								<br />
+								<span
+									>* <span class="text-blue-400">@</span><span class="text-purple-400">status</span>
+									<span class="lowercase">&#x2774;{work.status}&#x2775;</span>
+								</span>
+								<br />
+								<span>*/</span>
+							</div>
+							<li />
 						</div>
 					</li>
 				{/each}
