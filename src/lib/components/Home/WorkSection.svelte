@@ -36,31 +36,31 @@
 			status: 'Live'
 		},
 		{
+			title: 'Anonymus',
+			description: 'Plattform to manage customer base',
+			stack: [1, 8, 10, 16, 17],
+			status: 'Live (VPN)'
+		},
+		{
 			title: 'branchTerminator',
 			description: 'Script to delete selected branches',
 			stack: [0, 12],
 			status: 'Live (GitHub)',
-			link: 'https://github.com/sdoerger/branchTerminator',
+			link: 'https://github.com/sdoerger/branchTerminator'
 		},
 		{
 			title: 'gitSprintToMain',
 			description: 'Script to merge feat. > dev. > main',
 			stack: [5],
 			status: 'Live (GitHub)',
-			link: 'https://github.com/sdoerger/gitSprintToMain',
+			link: 'https://github.com/sdoerger/gitSprintToMain'
 		},
 		{
 			title: 'chunkDirsMoveFiles',
 			description: 'Script to split files to dir',
 			stack: [0, 12],
 			status: 'Live (GitHub)',
-			link: 'https://github.com/sdoerger/gitSprintToMain',
-		},
-		{
-			title: 'Anonymus',
-			description: 'Plattform to manage customer base',
-			stack: [1, 8, 10, 16, 17],
-			status: 'Live (VPN)'
+			link: 'https://github.com/sdoerger/gitSprintToMain'
 		},
 		{
 			title: 'Anonymus',
