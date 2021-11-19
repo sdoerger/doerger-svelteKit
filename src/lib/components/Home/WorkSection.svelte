@@ -7,13 +7,13 @@
 	// console.log(useSkills);
 
 	const workExamples: [] = [
-		// {
-		// 	title: 'Publishbar',
-		// 	description: 'Social Communication App',
-		// 	stack: [1, 8, 10, 16, 17],
-		// 	link: 'https://publishbar.com',
-		// 	status: 'Coming 2022'
-		// },
+		{
+			title: 'Publishbar',
+			description: 'Social Communication App',
+			stack: [1, 8, 10, 16, 17],
+			// link: 'https://publishbar.com',
+			status: 'Coming 2022'
+		},
 		// {
 		// 	title: 'Projekt Jikan',
 		// 	description: 'Task Management App',
