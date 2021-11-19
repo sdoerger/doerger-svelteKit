@@ -14,26 +14,40 @@
 			link: 'https://publishbar.com',
 			status: 'Coming 2022'
 		},
-		{
-			title: 'Publishbar',
-			description: 'Task Management App',
-			stack: [1, 8, 10, 16, 17],
-			link: null,
-			status: 'Coming 2022'
-		},
+		// {
+		// 	title: 'Projekt Jikan',
+		// 	description: 'Task Management App',
+		// 	stack: [1, 8, 10, 16, 17],
+		// 	link: null,
+		// 	status: 'Coming 2022'
+		// },
 		{
 			title: 'World for Take Away',
-			description: 'Dev Blog and personal website',
-			stack: [2, 9, 10, 16, 18],
+			description: 'Travel Blog',
+			stack: [0, 9, 10, 16, 18],
 			link: 'https://worldfortakeaway.com',
 			status: '2021'
 		},
 		{
 			title: 'doerger.net',
-			description: 'Travel Blog',
-			stack: [1, 11, 10, 16, 19],
+			description: 'Dev Blog and personal website',
+			stack: [1, 11, 10, 16],
 			link: 'https://doerger.net',
 			status: 'Live'
+		},
+		{
+			title: 'Anonymus 1',
+			description: 'Plattform to manage customer base',
+			stack: [1, 8, 10, 16, 17],
+			link: 'https://doerger.net',
+			status: 'Live (VPN)'
+		},
+		{
+			title: 'Anonymus 2',
+			description: 'Tool to anaylse sales (ext. + Google API)',
+			stack: [0, 8, 10, 19, 18],
+			link: 'https://doerger.net',
+			status: 'Live (premium)'
 		},
 		{
 			title: 'Applied Data Scene',
@@ -76,7 +90,7 @@
 								<br />
 								<span
 									>* <span class="text-blue-400">@</span><span class="text-purple-400">stack</span>
-									&#x2774;string&#x2775; – i. e.:
+									&#x2774;string&#x2775;:
 								</span>
 								{#each work.stack as stack, index}
 									{#if index !== 0}
@@ -84,6 +98,7 @@
 									{/if}
 									{useSkills[stack].label}
 								{/each}
+								, ...
 								<br />
 								<span
 									>* <span class="text-blue-400">@</span><span class="text-purple-400">status</span>
