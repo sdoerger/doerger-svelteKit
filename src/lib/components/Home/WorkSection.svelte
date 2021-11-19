@@ -36,14 +36,34 @@
 			status: 'Live'
 		},
 		{
-			title: 'Anonymus 1',
+			title: 'branchTerminator',
+			description: 'Script to delete selected branches',
+			stack: [0, 12],
+			status: 'Live (GitHub)',
+			link: 'https://github.com/sdoerger/branchTerminator',
+		},
+		{
+			title: 'gitSprintToMain',
+			description: 'Script to merge feat. > dev. > main',
+			stack: [5],
+			status: 'Live (GitHub)',
+			link: 'https://github.com/sdoerger/gitSprintToMain',
+		},
+		{
+			title: 'chunkDirsMoveFiles',
+			description: 'Script to split files to dir',
+			stack: [0, 12],
+			status: 'Live (GitHub)',
+			link: 'https://github.com/sdoerger/gitSprintToMain',
+		},
+		{
+			title: 'Anonymus',
 			description: 'Plattform to manage customer base',
 			stack: [1, 8, 10, 16, 17],
-			link: 'https://doerger.net',
 			status: 'Live (VPN)'
 		},
 		{
-			title: 'Anonymus 2',
+			title: 'Anonymus',
 			description: 'Tool to anaylse sales (ext. + Google API)',
 			stack: [0, 8, 10, 19, 18],
 			link: 'https://doerger.net',
@@ -60,7 +80,7 @@
 </script>
 
 <ScrollSpy sectionTitle="Arbeiten" sectionSubtitle="Portfolio" dynamicSVGs="WorksSVG">
-	<section id="services-section" class="index-section">
+	<section id="work-section" class="index-section">
 		<div class="mb-6">
 			<h2
 				class="pb-4 tracking-tighter font-bold uppercase leading-none md:mx-auto font-josefinSans text-3xl mt-20"

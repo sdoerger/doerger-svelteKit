@@ -28,7 +28,7 @@
 		},
 		{
 			label: 'Arbeiten',
-			path: '/#skill-section',
+			path: '/#work-section',
 			dynamicComponent: ['WorksSVG']
 		}
 	];
@@ -56,15 +56,15 @@
 	<div>
 		{#if toggleState === false}
 			<div class="h-8" on:click={() => toggleMenu(true)}>
-				<div class="w-8 border-b-4 mb-1 border-sdGreen-800" />
-				<div class="w-6 border-b-4 mb-1 border-sdGreen-800" />
-				<div class="w-8 border-b-4 mb-1 border-sdGreen-800" />
+				<div class="w-8 border-b-4 mb-1 border-sdGreen-400" />
+				<div class="w-6 border-b-4 mb-1 border-sdGreen-400" />
+				<div class="w-8 border-b-4 mb-1 border-sdGreen-400" />
 			</div>
 		{/if}
 		{#if toggleState === true}
 			<div class="h-8" on:click={() => toggleMenu(false)}>
-				<div class="w-8 border-b-4 mb-1 border-sdGreen-800 transform -rotate-45 relative top-2" />
-				<div class="w-8 border-b-4 mb-1 border-sdGreen-800 transform rotate-45 relative" />
+				<div class="w-8 border-b-4 mb-1 border-sdGreen-400 transform -rotate-45 relative top-2" />
+				<div class="w-8 border-b-4 mb-1 border-sdGreen-400 transform rotate-45 relative" />
 			</div>
 		{/if}
 	</div>
@@ -109,7 +109,7 @@
 		"
 		>
 			<div
-				class="flex flex-col lg:flex-row justify-items-start space-y-3 lg:space-x-6 lg:space-y-0 text-center mt-6 text-xl text-sdGreen-800"
+				class="flex flex-col lg:flex-row justify-items-start space-y-3 lg:space-x-6 lg:space-y-0 text-center mt-6 text-xl text-sdGreen-400"
 			>
 				{#each menuItems as item}
 					<div
@@ -128,6 +128,6 @@
 
 <style lang="postcss">
 	.active {
-		@apply text-sdGreen-400 font-bold border-b-2 border-sdGreen-800;
+		@apply text-sdGreen-400 font-bold border-b-2 border-sdGreen-400;
 	}
 </style>
