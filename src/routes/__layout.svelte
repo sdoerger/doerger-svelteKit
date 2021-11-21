@@ -11,12 +11,14 @@
 	import ServiceSVG from '$lib/components/Home/DynamicSVGs/ServiceSVG.svelte';
 	import SkillLanguagesSVG from '$lib/components/Home/DynamicSVGs/SkillLanguagesSVG.svelte';
 	import SkillFrameworksSVG from '$lib/components/Home/DynamicSVGs/SkillFrameworksSVG.svelte';
+	import WorksSVG from '$lib/components/Home/DynamicSVGs/WorksSVG.svelte';
 
 	const dynamicsCompoenents = {
 		IntroSVG,
 		ServiceSVG,
 		SkillLanguagesSVG,
-		SkillFrameworksSVG
+		SkillFrameworksSVG,
+		WorksSVG
 	};
 	$: $dynamicComponent;
 

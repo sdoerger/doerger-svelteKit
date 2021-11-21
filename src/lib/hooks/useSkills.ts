@@ -197,5 +197,13 @@ export const useSkills: [] = [
 		level: '1',
 		link: '',
 		visibleToType: false
+	},
+	{
+		type: 'library',
+		label: 'Astro',
+		icon: 'astro',
+		level: '1',
+		link: '',
+		visibleToType: false
 	}
 ];

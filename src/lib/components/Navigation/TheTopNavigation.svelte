@@ -4,6 +4,8 @@
 
 	$: $dynamicComponent;
 
+	console.log($dynamicComponent);
+
 	// let toggleState = false;
 	$: toggleState = false;
 	function toggleMenu(toggleTo: boolean) {
@@ -35,7 +37,10 @@
 
 	function currentSection(currenPath: string, dynamicComponents: Array<string>): boolean {
 		for (const component of dynamicComponents) {
+
 			if (currenPath == component) {
+				console.log(currenPath);
+				console.log(currenPath);
 				return true;
 			}
 		}

@@ -1,26 +1,37 @@
 <script lang="ts">
-	import WorksSVG from './DynamicSVGs/WorksSVG.svelte';
-
 	import ScrollSpy from '$lib/components/Elements/ScrollSpy.svelte';
 
 	import { useSkills } from '$lib/hooks/useSkills';
-	// console.log(useSkills);
 
-	const workExamples: [] = [
-		{
-			title: 'Publishbar',
-			description: 'Social Communication App',
-			stack: [1, 8, 10, 16, 17],
-			// link: 'https://publishbar.com',
-			status: 'Coming 2022'
-		},
+	type work = {
+		title: string;
+		description: string;
+		stack: number[];
+		link?: string;
+		status: string;
+	};
+
+	const workExamples: work[] = [
 		// {
 		// 	title: 'Projekt Jikan',
 		// 	description: 'Task Management App',
 		// 	stack: [1, 8, 10, 16, 17],
-		// 	link: null,
 		// 	status: 'Coming 2022'
 		// },
+		// {
+		// 	title: 'Untitled Project',
+		// 	description: 'Dev Blog',
+		// 	stack: [1, 11, 10, 20],
+		// 	// link: 'https://doerger.net',
+		// 	status: 'In Preperation'
+		// },
+		{
+			title: 'Publishbar',
+			description: 'Social Communication App',
+			stack: [1, 8, 10, 16, 17],
+			link: 'https://publishbar.com',
+			status: 'Coming 2022'
+		},
 		{
 			title: 'World for Take Away',
 			description: 'Travel Blog',
@@ -30,24 +41,24 @@
 		},
 		{
 			title: 'doerger.net',
-			description: 'Dev Blog and personal website',
+			description: 'Personal website',
 			stack: [1, 11, 10, 16],
 			link: 'https://doerger.net',
 			status: 'Live'
 		},
-		{
-			title: 'Anonymus',
-			description: 'Plattform to manage customer base',
-			stack: [1, 8, 10, 16, 17],
-			status: 'Live (VPN)'
-		},
-		{
-			title: 'branchTerminator',
-			description: 'Script to delete selected branches',
-			stack: [0, 12],
-			status: 'Live (GitHub)',
-			link: 'https://github.com/sdoerger/branchTerminator'
-		},
+		// {
+		// 	title: 'Anonymus',
+		// 	description: 'Plattform to manage customer base',
+		// 	stack: [1, 8, 10, 16, 17],
+		// 	status: 'Live (VPN)'
+		// },
+		// {
+		// 	title: 'branchTerminator',
+		// 	description: 'Script to delete selected branches',
+		// 	stack: [0, 12],
+		// 	status: 'Live (GitHub)',
+		// 	link: 'https://github.com/sdoerger/branchTerminator'
+		// },
 		{
 			title: 'gitSprintToMain',
 			description: 'Script to merge feat. > dev. > main',
@@ -62,13 +73,13 @@
 			status: 'Live (GitHub)',
 			link: 'https://github.com/sdoerger/gitSprintToMain'
 		},
-		{
-			title: 'Anonymus',
-			description: 'Tool to anaylse sales (ext. + Google API)',
-			stack: [0, 8, 10, 19, 18],
-			link: 'https://doerger.net',
-			status: 'Live (premium)'
-		},
+		// {
+		// 	title: 'Anonymus',
+		// 	description: 'Tool to anaylse sales (ext. + Google API)',
+		// 	stack: [0, 8, 10, 19, 18],
+		// 	link: 'https://doerger.net',
+		// 	status: 'Live (premium)'
+		// },
 		{
 			title: 'Applied Data Scene',
 			description: 'Static Website',
@@ -87,20 +98,13 @@
 			>
 				Arbeiten
 			</h2>
-			<h3 class="pb-4">... Von Ihrer Idee</h3>
-			<p class="mb-16 text-xl">
-				Hi, ich bin Stefan, Software-Entwickler (Fullstack Web-Development) mit 4 Jahren Erfahrung.
-				Mein Beruf ist mein Hobby und umgekehrt: Ich liebe es, responsive Websites und Web-Apps zu
-				programmieren. Wichtig ist mir dabei, dass diese nicht wie aus Beton gemacht aussehen, mehr
-				können, als nur gut aussehen und ihre Besucher erreichen.
-			</p>
 
 			<ul class="mb-16 text-xl">
 				{#each workExamples as work}
 					<li class="mb-16">
 						<div class="flex flex-col">
-							<div class="text-sdGreen-800 mb-2">
-								<a class="underline" href={work.link}>{work.title}</a>
+							<div class="text-sdGreen-400 mb-2">
+								<a class={work.link ? 'underline' : ''} href={work.link}>{work.title}</a>
 								<span class="text-gray-500 ml-3 uppercase">// {work.description}</span>
 							</div>
 							<div class="text-gray-500 my-4 italic">
@@ -127,7 +131,6 @@
 								<br />
 								<span>*/</span>
 							</div>
-							<li />
 						</div>
 					</li>
 				{/each}
