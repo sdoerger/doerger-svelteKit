@@ -18,13 +18,13 @@
 		// 	stack: [1, 8, 10, 16, 17],
 		// 	status: 'Coming 2022'
 		// },
-		// {
-		// 	title: 'Untitled Project',
-		// 	description: 'Dev Blog',
-		// 	stack: [1, 11, 10, 20],
-		// 	// link: 'https://doerger.net',
-		// 	status: 'In Preperation'
-		// },
+		{
+			title: 'Untitled Project',
+			description: 'Dev Blog',
+			stack: [1, 11, 10, 20],
+			// link: 'https://doerger.net',
+			status: 'In Preperation'
+		},
 		{
 			title: 'Publishbar',
 			description: 'Social Communication App',
@@ -105,9 +105,9 @@
 						<div class="flex flex-col">
 							<div class="text-sdGreen-400 mb-2">
 								<a class={work.link ? 'underline' : ''} href={work.link}>{work.title}</a>
-								<span class="text-gray-500 ml-3 uppercase">// {work.description}</span>
+								<span class="text-gray-500 uppercase">// {work.description}</span>
 							</div>
-							<div class="text-gray-500 my-4 italic">
+							<div class="text-gray-500 mb-4 italic text-lg">
 								<span>/**</span>
 								<br />
 								<span>* technology used in project</span>
