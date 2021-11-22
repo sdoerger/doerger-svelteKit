@@ -63,5 +63,6 @@
 		<div class="py-16 lg:py-32">
 			<slot />
 		</div>
+		<div class="py-2 px-10 lg:px-24 h-16">FOOTER</div>
 	</div>
 </div>
