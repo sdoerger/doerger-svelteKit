@@ -8,10 +8,10 @@
 		updateComponent('dynamicSVGs');
 	})();
 
-	const ghostedMail = ['info', '@', 'doerger', '.', 'net'];
+const ghostedMail = ['info', '@', 'doerger', '.', 'net'];
 </script>
 
-<div class="px-10 lg:px-24 text-sdlightGrey-50 lg:text-2xl 	-words">
+<div class="px-10 lg:px-24 text-sdlightGrey-50 lg:text-2xl break-words">
 	<h2
 		class="text-sdGreen-400 pb-4 tracking-tighter font-bold uppercase leading-none md:mx-auto font-josefinSans text-3xl mt-20"
 	>
