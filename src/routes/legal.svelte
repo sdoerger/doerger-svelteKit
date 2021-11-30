@@ -8,7 +8,7 @@
 		updateComponent('dynamicSVGs');
 	})();
 
-const ghostedMail = ['info', '@', 'doerger', '.', 'net'];
+	const ghostedMail = ['info', '@', 'doerger', '.', 'net'];
 </script>
 
 <div class="px-10 lg:px-24 text-sdlightGrey-50 lg:text-2xl break-words">
@@ -34,7 +34,6 @@ const ghostedMail = ['info', '@', 'doerger', '.', 'net'];
 		Kontaktmöglichkeiten
 	</h3>
 	<p>E-Mail-Adresse: <a href="mailto:{ghostedMail.join('')}">{ghostedMail.join('')}</a></p>
-	<p>Telefon: 030 00 1234</p>
 	<h3
 		class="text-sdGreen-400 pb-4 tracking-tighter font-bold uppercase leading-none md:mx-auto font-josefinSans text-2xl mt-20"
 		id="m58"
@@ -48,9 +47,10 @@ const ghostedMail = ['info', '@', 'doerger', '.', 'net'];
 		Social Media und andere Onlinepräsenzen
 	</h3>
 	<p>Dieses Impressum gilt auch für die folgenden Social-Media-Präsenzen und Onlineprofile:</p>
-	<p>XYfacebook</p>
-	<p>XYLinkedIn</p>
-	<p>XYInsta</p>
+	<p>https://www.facebook.com/StefanDoergerWebDev</p>
+	<p>https://www.linkedin.com/in/stefan-d-195b4a47/</p>
+	<p>https://www.xing.com/profile/Stefan_Doerger2/portfolio</p>
+	<p>https://github.com/stefandoerger/</p>
 	<h3
 		class="text-sdGreen-400 pb-4 tracking-tighter font-bold uppercase leading-none md:mx-auto font-josefinSans text-2xl mt-20"
 		id="m65"
@@ -90,7 +90,10 @@ const ghostedMail = ['info', '@', 'doerger', '.', 'net'];
 		Bildnachweise
 	</h3>
 	<p>Bildquellen und Urheberrechtshinweise:</p>
-	<p>XYFlaticon</p>
+	<div>
+		Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
+		<a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+	</div>
 	<p class="seal">
 		<a
 			href="https://datenschutz-generator.de/?l=de"
