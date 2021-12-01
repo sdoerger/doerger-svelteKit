@@ -5,6 +5,7 @@
 
 	// COMPONENTS
 	import TheTopNavigation from '$lib/components/Navigation/TheTopNavigation.svelte';
+	import TheBottomNavigation from '$lib/components/Navigation/TheBottomNavigation.svelte';
 
 	// DYNAMICS COMPONENTS
 	import IntroSVG from '$lib/components/Home/DynamicSVGs/IntroSVG.svelte';
@@ -63,6 +64,8 @@
 		<div class="py-16 lg:py-32">
 			<slot />
 		</div>
-		<div class="py-2 px-10 lg:px-24 h-16">FOOTER</div>
+		<div class="py-2 px-10 lg:px-24 h-16">
+			<TheBottomNavigation />
+		</div>
 	</div>
 </div>

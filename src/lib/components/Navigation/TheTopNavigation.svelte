@@ -13,7 +13,7 @@
 	const menuItems = [
 		{
 			label: 'Home',
-			path: '/#intro-section',
+			path: '/',
 			dynamicComponent: ['IntroSVG']
 		},
 		{
@@ -44,7 +44,7 @@
 </script>
 
 <div
-	class="lg:invisible flex justify-between pl-10 pr-2 py-2 items-center flex-wrap z-30 fixed h-16 w-full 			bg-gradient-to-b
+	class="lg:invisible flex justify-between pl-10 pr-2 py-2 items-center flex-wrap z-30 fixed h-16 w-full bg-gradient-to-b
 	from-sdDarkGrey-400
 	via-sdDarkGrey-400 to-transparent"
 >
