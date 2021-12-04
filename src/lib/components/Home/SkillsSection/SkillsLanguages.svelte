@@ -10,7 +10,7 @@
 				<img
 					src={useFrameworkIcons[codingLanguage.icon]}
 					alt=""
-					class="object-contain h-36 w-full p-3 mb-5"
+					class="object-contain h-36 w-36 p-3 mb-5"
 				/>
 				<small class="text-sdlightGrey-50">{codingLanguage.label}</small>
 			</div>
