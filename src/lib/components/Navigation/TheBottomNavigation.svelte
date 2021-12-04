@@ -1,5 +1,12 @@
 <script lang="ts">
+	// SVELTE
 	import { page } from '$app/stores';
+
+	// ASSETS
+	import iconGitHub from '$lib/assets/img/icons/github.svg';
+	import iconFaceBook from '$lib/assets/img/icons/facebook.svg';
+	import iconLinkedIn from '$lib/assets/img/icons/linkedin.svg';
+
 	const ghostedMail = ['info', '@', 'doerger', '.', 'net'];
 
 	const menuItems = [
@@ -10,6 +17,24 @@
 		{
 			label: 'Datenschutz',
 			path: '/privacy'
+		}
+	];
+
+	const socialMedia = [
+		{
+			label: 'GitHub',
+			link: 'https://github.com/sdoerger/',
+			icon: iconGitHub
+		},
+		{
+			label: 'Facebook',
+			link: 'https://www.facebook.com/StefanDoergerWebDev',
+			icon: iconFaceBook
+		},
+		{
+			label: 'LinkedIn',
+			link: 'https://www.linkedin.com/in/stefan-d-195b4a47/',
+			icon: iconLinkedIn
 		}
 	];
 </script>
@@ -23,6 +48,17 @@
 		</div>
 	{/each}
 	<a href="mailto:{ghostedMail.join('')}">{ghostedMail.join('')}</a>
+	<!-- <p class:active={$page.path === '/about'}><a sveltekit:prefetch href="/about">About</a></p>
+		<p class:active={$page.path === '/todos'}><a sveltekit:prefetch href="/todos">Todos</a></p> -->
+</div>
+<div
+	class="flex flex-col lg:flex-row justify-items-start space-y-3 lg:space-x-6 lg:space-y-0 text-center mt-6 text-xl text-sdGreen-400"
+>
+	{#each socialMedia as media}
+		<a target="_blank" href={media.link}>
+			<img src={media.icon} alt="" class="object-contain h-7 w-full mb-5" />
+		</a>
+	{/each}
 	<!-- <p class:active={$page.path === '/about'}><a sveltekit:prefetch href="/about">About</a></p>
 		<p class:active={$page.path === '/todos'}><a sveltekit:prefetch href="/todos">Todos</a></p> -->
 </div>

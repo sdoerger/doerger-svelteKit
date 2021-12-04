@@ -2,31 +2,30 @@
 	import ScrollSpy from '$lib/components/Elements/ScrollSpy.svelte';
 </script>
 
-<ScrollSpy
-	sectionTitle="Services"
-	sectionSubtitle="Web Apps und Sites"
-	dynamicSVGs="ServiceSVG"
->
+<ScrollSpy sectionTitle="Services" sectionSubtitle="Web Apps und Sites" dynamicSVGs="ServiceSVG">
 	<section id="services-section" class="index-section">
 		<div class="mb-6">
-			<h2
-				
-			>
-				Services
-			</h2>
-			<h3 class="pb-4">... Von Ihrer Idee</h3>
-			<p class="mb-16 text-xl">
-				Hi, ich bin Stefan, Software-Entwickler (Fullstack Web-Development) mit 4 Jahren Erfahrung.
-				Mein Beruf ist mein Hobby und umgekehrt: Ich liebe es, responsive Websites und Web-Apps zu
-				programmieren. Wichtig ist mir dabei, dass diese nicht wie aus Beton gemacht aussehen, mehr
-				können, als nur gut aussehen und ihre Besucher erreichen.
-			</p>
-			<h3 class="pb-4">... zu Ihrer Website</h3>
-			<p class="text-xl">
-				Für wen mache ich das? Für alle, deren Vision von Templates zerhackt wird und die
-				Funktionalität brauchen, die ein Baukasten nicht bietet. Ich biete einen Rundum-Service, von
-				der Plaung bis zum Hosting; mein Fokus liegt hierbei auf der Programmierung, Gestaltung und
-				Beratung.
+			<h2>Services</h2>
+			<p class="sd-like-p mb-16 text-xl text-sdlightGrey-50">
+				Hautsächlicher baut Stefan <span class="sd-skew">Web-Apps</span> und SSG (statisch
+				generierte Landing Pages).
+				<br /><br />
+				Neben Vue.js setz er auf die Frameworks
+				<span class="sd-skew">Nuxt, SvelteKit, Astro</span>
+				und auf neuere Technologien wie <span class="sd-skew">Vite und TypeScript</span>.
+				<br /><br />
+				Hilfreiche Skripte schreibt er in Node.js oder Bash und NPM-Packages.
+
+				<br /><br />
+				Wichtig ist ihm dabei eine gute Mischung aus Nutzen, Bedienung, Ästhetik und
+				<span class="sd-skew">Performance</span>.
+				<br /><br />
+				Auch wenn sein Fokus auf Frontend-Arbeiten liegt, kann er auch kleinere
+				<span class="sd-skew">Backend</span>-Aufgaben, mittels Strapi oder Express und
+				MongoDB erledigen.
+				<br /><br />
+				Auch mit dem Design Handwerk ist Stefan vertraut und bereitet Wire Frames und
+				<span class="sd-skew">Screen Designs</span> in Figma auf.
 			</p>
 		</div>
 	</section>

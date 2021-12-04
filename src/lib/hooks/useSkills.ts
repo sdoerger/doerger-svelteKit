@@ -16,6 +16,11 @@ import iconSass from '$lib/assets/img/icons/sass.svg';
 import iconBash from '$lib/assets/img/icons/bash.svg';
 import iconMongodb from '$lib/assets/img/icons/mongodb.svg';
 import iconMysql from '$lib/assets/img/icons/mysql.svg';
+import iconMarkdown from '$lib/assets/img/icons/markdown.svg';
+import iconNpm from '$lib/assets/img/icons/npm.svg';
+import iconVsCode from '$lib/assets/img/icons/vscode.svg';
+import iconStrapi from '$lib/assets/img/icons/strapi.svg';
+import iconPug from '$lib/assets/img/icons/pug.svg';
 
 export const useFrameworkIcons = {
 	vue: iconVue,
@@ -34,7 +39,12 @@ export const useFrameworkIcons = {
 	sass: iconSass,
 	bash: iconBash,
 	mongodb: iconMongodb,
-	mysql: iconMysql
+	mysql: iconMysql,
+	markdown: iconMarkdown,
+	npm: iconNpm,
+	vscode: iconVsCode,
+	strapi: iconStrapi,
+	pug: iconPug
 };
 
 export const useSkills: [] = [
@@ -84,7 +94,7 @@ export const useSkills: [] = [
 		icon: 'bash',
 		level: '1',
 		link: '',
-		visibleToType: false
+		visibleToType: true
 	},
 	{
 		type: 'language',
@@ -205,5 +215,45 @@ export const useSkills: [] = [
 		level: '1',
 		link: '',
 		visibleToType: false
+	},
+	{
+		type: 'language',
+		label: 'Markdown',
+		icon: 'markdown',
+		level: '1',
+		link: '',
+		visibleToType: true
+	},
+	{
+		type: 'library',
+		label: 'Strapi',
+		icon: 'strapi',
+		level: '1',
+		link: '',
+		visibleToType: true
+	},
+	{
+		type: 'library',
+		label: 'Visual Studio Code',
+		icon: 'vscode',
+		level: '1',
+		link: '',
+		visibleToType: true
+	},
+	{
+		type: 'library',
+		label: 'NPM',
+		icon: 'npm',
+		level: '1',
+		link: '',
+		visibleToType: true
+	},
+	{
+		type: 'language',
+		label: 'Pug',
+		icon: 'pug',
+		level: '1',
+		link: '',
+		visibleToType: true
 	}
 ];

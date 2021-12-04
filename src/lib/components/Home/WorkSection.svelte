@@ -41,7 +41,7 @@
 			description: 'Travel Blog',
 			stack: [0, 9, 10, 16, 18],
 			link: 'https://worldfortakeaway.com',
-			status: '2021',
+			status: '12 / 2021',
 			visible: true
 		},
 		{
@@ -113,7 +113,9 @@
 						<li class="mb-16">
 							<div class="flex flex-col">
 								<div class="text-sdGreen-400 mb-2">
-									<a class={work.link ? 'underline' : ''} href={work.link}>{work.title}</a>
+									<a target="_blank" class={work.link ? 'underline' : ''} href={work.link}
+										>{work.title}</a
+									>
 									<span class="text-gray-500 uppercase">// {work.description}</span>
 								</div>
 								<div class="text-gray-500 mb-4 italic text-lg">
