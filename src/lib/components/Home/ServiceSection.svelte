@@ -7,10 +7,10 @@
 		<div class="mb-6">
 			<h2>Services</h2>
 			<p class="sd-like-p mb-16 text-xl text-sdlightGrey-50">
-				Hautsächlicher baut Stefan <span class="sd-skew">Web-Apps</span> und SSG (statisch
-				generierte Landing Pages).
+				Hauptsächlichebaut Stefan <span class="sd-skew">Web-Apps</span> und SSG (statisch generierte
+				Landing Pages).
 				<br /><br />
-				Neben Vue.js setz er auf die Frameworks
+				Neben Vue.js setzt er auf die Frameworks
 				<span class="sd-skew">Nuxt, SvelteKit, Astro</span>
 				und auf neuere Technologien wie <span class="sd-skew">Vite und TypeScript</span>.
 				<br /><br />
@@ -21,11 +21,11 @@
 				<span class="sd-skew">Performance</span>.
 				<br /><br />
 				Auch wenn sein Fokus auf Frontend-Arbeiten liegt, kann er auch kleinere
-				<span class="sd-skew">Backend</span>-Aufgaben, mittels Strapi oder Express und
-				MongoDB erledigen.
+				<span class="sd-skew">Backend</span>-Aufgaben, mittels Strapi oder Express und MongoDB
+				programmieren.
 				<br /><br />
-				Auch mit dem Design Handwerk ist Stefan vertraut und bereitet Wire Frames und
-				<span class="sd-skew">Screen Designs</span> in Figma auf.
+				Auch mit dem Design Handwerk ist Stefan vertraut und konzipiert Wire Frames und Screen Designs
+				in <span class="sd-skew">Figma</span>.
 			</p>
 		</div>
 	</section>

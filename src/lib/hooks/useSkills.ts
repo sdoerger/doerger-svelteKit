@@ -145,7 +145,7 @@ export const useSkills: [] = [
 		visibleToType: true
 	},
 	{
-		type: 'library',
+		type: 'language',
 		label: 'Node.js',
 		icon: 'nodejs',
 		level: '2',
@@ -249,7 +249,7 @@ export const useSkills: [] = [
 		visibleToType: true
 	},
 	{
-		type: 'language',
+		type: 'library',
 		label: 'Pug',
 		icon: 'pug',
 		level: '1',

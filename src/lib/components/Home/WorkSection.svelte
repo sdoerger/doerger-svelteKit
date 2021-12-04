@@ -37,11 +37,19 @@
 			visible: true
 		},
 		{
+			title: 'Retonio.js',
+			description: 'NPM Package: Pinia based State + Loading Wrapper',
+			stack: [1, 8, 10, 16, 17],
+			link: 'https://publishbar.com',
+			status: 'Coming 12 2021',
+			visible: true
+		},
+		{
 			title: 'World for Take Away',
 			description: 'Travel Blog',
 			stack: [0, 9, 10, 16, 18],
 			link: 'https://worldfortakeaway.com',
-			status: '12 / 2021',
+			status: 'Coming 12 / 2021',
 			visible: true
 		},
 		{
@@ -81,7 +89,7 @@
 			stack: [0, 12],
 			status: 'Live (GitHub)',
 			link: 'https://github.com/sdoerger/gitSprintToMain',
-			visible: true
+			visible: false
 		},
 		{
 			title: 'Anonymus',
@@ -116,7 +124,8 @@
 									<a target="_blank" class={work.link ? 'underline' : ''} href={work.link}
 										>{work.title}</a
 									>
-									<span class="text-gray-500 uppercase">// {work.description}</span>
+									<span class="text-gray-500 uppercase ml-2 break-words">// {work.description}</span
+									>
 								</div>
 								<div class="text-gray-500 mb-4 italic text-lg">
 									<span>/**</span>
@@ -130,7 +139,7 @@
 									</span>
 									{#each work.stack as stack, index}
 										{#if index !== 0}
-											,
+											,true
 										{/if}
 										{#if useSkills && useSkills[stack]}
 											{useSkills[stack]['label']}
@@ -151,6 +160,10 @@
 						</li>
 					{/if}
 				{/each}
+				Mehr Projekte auf
+				<span class="sd-skew"
+					><a href="https://github.com/sdoerger/" target="_blank">Github</a></span
+				>.
 			</ul>
 		</div>
 	</section>

@@ -37,18 +37,18 @@
 				<span class="sd-skew">Vue.js</span>, Web-Apps / SPA (Singel Page Applikation).
 				<br /><br />
 				Wichtigste Erkenntnis: Die Flamme der <span class="sd-skew">Neugier</span> brennt nicht aus.
-				Daher macht er das schon einige Jahren.
+				Daher macht er das schon seit einigen Jahren.
 				<br /><br />
 				Er ist aktiv in der <span class="sd-skew">Open Source</span> Community, veröffentlicht auf
 				<span class="sd-skew">GitHub</span>
-				und <span class="sd-skew">NPM</span> nützliche Skripte und Packages und ist dort und auf
+				und <span class="sd-skew">NPM</span> nützliche Skripte und Packages. Er ist auf Github und
 				<span class="sd-skew">StackOverflow</span>
 				im regen Austausch mit Experten und Anfängern.
 				<br />
 				<br />
 
 				Dazu ist er ein Arbeitkultur-Allrounder und hat bei <span class="sd-skew">Fortune 500</span>
-				Unternehmen <span class="sd-skew">(mehrjährig im Ausland)</span> sowie 10-Mensch-Butzen gearbeitet.
+				Unternehmen <span class="sd-skew">(mehrjährig im Ausland)</span> sowie 10-Mensch-Agenturen gearbeitet.
 			</p>
 		</div>
 	</section>

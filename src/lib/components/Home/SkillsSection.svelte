@@ -14,12 +14,12 @@
 			<h2
 				class="pb-4 tracking-tighter font-bold uppercase leading-none md:mx-auto font-josefinSans text-3xl mt-20 break-words"
 			>
-				Programmiersprachen
+				Pro<wbr>gramm<wbr>ier<wbr>sprachen
 			</h2>
-			<p class="mb-16">
+			<p class="mb-16 text-xl">
 				Mit diesen Programmiersprachen (Auszeichnungs-, Style-Sprachen) arbietet er <span
 					class="sd-skew">täglich</span
-				>.
+				> bis häufig.
 			</p>
 			<SkillsLanguages />
 		</div>
@@ -28,10 +28,10 @@
 
 <ScrollSpy {sectionTitle} sectionSubtitle="Frameworks/Libraries" dynamicSVGs="SkillFrameworksSVG">
 	<section class="index-section">
-		<div class="mt-28 mb-6">
-			<h2>Frameworks</h2>
+		<div class="mt-28 mb-6 text-xl">
+			<h2>Frame<wbr>works</h2>
 			<p class="mb-16">
-				Diese Frameworks <span class="sd-skew">Libraries und Tools</span> nutze er dabei.
+				Diese Frameworks <span class="sd-skew">Libraries und Tools</span> nutzt er dabei.
 			</p>
 
 			<SkillsFrameworks />
