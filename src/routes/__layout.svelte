@@ -32,6 +32,19 @@
 
 <svelte:window bind:innerWidth={screenWidth} />
 
+<svelte:head>
+	<title>Stefan Dörger: JavaScript Entwickler, Vue.js-Experte</title>
+	<meta
+		name="description"
+		content="Stefan Dörger Entwickler aus Berlin. Mit Vue.js baut er aus JavaScript und TypeScript, Landing Pages und Apps für Web und ist Teil der Open Source Community."
+	/>
+	<meta
+		name="robots"
+		content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+	/>
+	<html lang="de" />
+</svelte:head>
+
 <div class="relative">
 	<div class="bg-sdGreen-400 fixed w-full invisible lg:visible lg:w-1/2 lg:min-h-screen lg:inset-0">
 		<div
