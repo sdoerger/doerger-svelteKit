@@ -31,7 +31,7 @@
 		<div class="mt-28 mb-6">
 			<h2>Frameworks</h2>
 			<p class="mb-16">
-				Diesen <span class="sd-skew">Frameworks, Libraries und Tools</span> nutze er dabei.
+				Diese Frameworks <span class="sd-skew">Libraries und Tools</span> nutze er dabei.
 			</p>
 
 			<SkillsFrameworks />
