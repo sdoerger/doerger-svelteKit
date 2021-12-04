@@ -14,14 +14,14 @@
 
 	html {
 		scroll-behavior: smooth;
-		@apply bg-sdDarkGrey-400
+		@apply bg-sdDarkGrey-400;
 	}
 
 	.index-section h1,
 	.index-section h2,
 	.index-section h3,
 	.index-section h4 {
-		@apply text-sdGreen-400 mb-10;
+		@apply text-sdGreen-400 tracking-tighter font-bold uppercase leading-none md:mx-auto font-josefinSans mt-10 mb-24 break-words;
 	}
 
 	/* .index-section h1 {
@@ -29,7 +29,7 @@
 	} */
 
 	.index-section h2 {
-		@apply lg:text-4xl;
+		@apply lg:text-5xl;
 	}
 
 	.index-section h3 {
@@ -49,8 +49,14 @@
 		@apply px-10 lg:px-24;
 	}
 
-	.index-section p, ul, li {
+	.index-section p,
+	ul,
+	li {
 		@apply text-sdlightGrey-50 lg:text-2xl;
+	}
+
+	.sd-skew {
+		@apply inline-block bg-sdGreen-400 py-0.5 px-2 mx-1 uppercase tracking-tighter font-semibold transform -skew-y-1 -skew-x-6 text-sdDarkGrey-400;
 	}
 
 	@media (max-width: 1024px) {

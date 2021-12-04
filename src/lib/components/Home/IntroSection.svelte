@@ -29,24 +29,26 @@
 			{/if}
 		</div>
 		<div class="mb-6">
-			<h2
-				
-			>
-				Intro
-			</h2>
-			<h3 class="pb-4">... Von Ihrer Idee</h3>
-			<p class="mb-16 text-xl">
-				Hi, ich bin Stefan, Software-Entwickler (Fullstack Web-Development) mit 4 Jahren Erfahrung.
-				Mein Beruf ist mein Hobby und umgekehrt: Ich liebe es, responsive Websites und Web-Apps zu
-				programmieren. Wichtig ist mir dabei, dass diese nicht wie aus Beton gemacht aussehen, mehr
-				können, als nur gut aussehen und ihre Besucher erreichen.
-			</p>
-			<h3 class="pb-4">... zu Ihrer Website</h3>
-			<p class="text-xl">
-				Für wen mache ich das? Für alle, deren Vision von Templates zerhackt wird und die
-				Funktionalität brauchen, die ein Baukasten nicht bietet. Ich biete einen Rundum-Service, von
-				der Plaung bis zum Hosting; mein Fokus liegt hierbei auf der Programmierung, Gestaltung und
-				Beratung.
+			<h2>Intro</h2>
+			<p class="sd-like-p mb-16 text-xl text-sdlightGrey-50">
+				Stefan ist ein <span class="sd-skew">Frontend</span>-Entwickler aus Berlin. Spezialisiert
+				hat er sich auf <span class="sd-skew">JAM-Stack</span>
+				<span class="italic">(JavaScript, API, Markdown)</span> und baut mittels
+				<span class="sd-skew">Vue.js</span>, Web-Apps / SPA (Singel Page Applikation).
+				<br /><br />
+				Wichtigste Erkenntnis: Die Flamme der <span class="sd-skew">Neugier</span> brennt nicht aus.
+				Daher macht er das schon einige Jahren.
+				<br /><br />
+				Er ist aktiv in der <span class="sd-skew">Open Source</span> Community, veröffentlicht auf
+				<span class="sd-skew">GitHub</span>
+				und <span class="sd-skew">NPM</span> nützliche Skripte und Packages und ist dort und auf
+				<span class="sd-skew">StackOverflow</span>
+				im regen Austausch mit Experten und Anfängern.
+				<br />
+				<br />
+
+				Dazu ist er ein Arbeitkultur-Allrounder und hat bei <span class="sd-skew">Fortune 500</span>
+				Unternehmen <span class="sd-skew">(mehrjährig im Ausland)</span> sowie 10-Mensch-Butzen gearbeitet.
 			</p>
 		</div>
 	</section>
