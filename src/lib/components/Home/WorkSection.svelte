@@ -9,83 +9,95 @@
 		stack: number[];
 		link?: string;
 		status: string;
+		visible: boolean;
 	};
 
 	const workExamples: work[] = [
-		// {
-		// 	title: 'Projekt Jikan',
-		// 	description: 'Task Management App',
-		// 	stack: [1, 8, 10, 16, 17],
-		// 	status: 'Coming 2022'
-		// },
+		{
+			title: 'Projekt Jikan',
+			description: 'Task Management App',
+			stack: [1, 8, 10, 16, 17],
+			status: 'Coming 2022',
+			visible: false
+		},
 		{
 			title: 'Untitled Project',
 			description: 'Dev Blog',
 			stack: [1, 11, 10, 20],
 			// link: 'https://doerger.net',
-			status: 'In Preperation'
+			status: 'In Preperation',
+			visible: false
 		},
 		{
 			title: 'Publishbar',
 			description: 'Social Communication App',
 			stack: [1, 8, 10, 16, 17],
 			link: 'https://publishbar.com',
-			status: 'Coming 2022'
+			status: 'Coming 2022',
+			visible: true
 		},
 		{
 			title: 'World for Take Away',
 			description: 'Travel Blog',
 			stack: [0, 9, 10, 16, 18],
 			link: 'https://worldfortakeaway.com',
-			status: '2021'
+			status: '2021',
+			visible: true
 		},
 		{
 			title: 'doerger.net',
 			description: 'Personal website',
 			stack: [1, 11, 10, 16],
 			link: 'https://doerger.net',
-			status: 'Live'
+			status: 'Live',
+			visible: false
 		},
-		// {
-		// 	title: 'Anonymus',
-		// 	description: 'Plattform to manage customer base',
-		// 	stack: [1, 8, 10, 16, 17],
-		// 	status: 'Live (VPN)'
-		// },
-		// {
-		// 	title: 'branchTerminator',
-		// 	description: 'Script to delete selected branches',
-		// 	stack: [0, 12],
-		// 	status: 'Live (GitHub)',
-		// 	link: 'https://github.com/sdoerger/branchTerminator'
-		// },
+		{
+			title: 'Anonymus',
+			description: 'Plattform to manage customer base',
+			stack: [1, 8, 10, 16, 17],
+			status: 'Live (VPN)',
+			visible: false
+		},
+		{
+			title: 'branchTerminator',
+			description: 'Script to delete selected branches',
+			stack: [0, 12],
+			status: 'Live (GitHub)',
+			link: 'https://github.com/sdoerger/branchTerminator',
+			visible: false
+		},
 		{
 			title: 'gitSprintToMain',
 			description: 'Script to merge feat. > dev. > main',
 			stack: [5],
 			status: 'Live (GitHub)',
-			link: 'https://github.com/sdoerger/gitSprintToMain'
+			link: 'https://github.com/sdoerger/gitSprintToMain',
+			visible: false
 		},
 		{
 			title: 'chunkDirsMoveFiles',
 			description: 'Script to split files to dir',
 			stack: [0, 12],
 			status: 'Live (GitHub)',
-			link: 'https://github.com/sdoerger/gitSprintToMain'
+			link: 'https://github.com/sdoerger/gitSprintToMain',
+			visible: true
 		},
-		// {
-		// 	title: 'Anonymus',
-		// 	description: 'Tool to anaylse sales (ext. + Google API)',
-		// 	stack: [0, 8, 10, 19, 18],
-		// 	link: 'https://doerger.net',
-		// 	status: 'Live (premium)'
-		// },
+		{
+			title: 'Anonymus',
+			description: 'Tool to anaylse sales (ext. + Google API)',
+			stack: [0, 8, 10, 19, 18],
+			link: 'https://doerger.net',
+			status: 'Live (premium)',
+			visible: false
+		},
 		{
 			title: 'Applied Data Scene',
 			description: 'Static Website',
 			stack: [0, 2, 3, 14],
 			link: 'https://applieddatascience.de',
-			status: 'Live'
+			status: 'Live',
+			visible: false
 		}
 	];
 </script>
@@ -93,46 +105,49 @@
 <ScrollSpy sectionTitle="Arbeiten" sectionSubtitle="Portfolio" dynamicSVGs="WorksSVG">
 	<section id="work-section" class="index-section">
 		<div class="mb-6">
-			<h2
-				class="pb-4 tracking-tighter font-bold uppercase leading-none md:mx-auto font-josefinSans text-3xl mt-20"
-			>
-				Arbeiten
-			</h2>
-
+			<h2>Arbeiten</h2>
+			<p class="mb-16">Hier eine Auswahl seiner letzten Projekte.</p>
 			<ul class="mb-16 text-xl">
 				{#each workExamples as work}
-					<li class="mb-16">
-						<div class="flex flex-col">
-							<div class="text-sdGreen-400 mb-2">
-								<a class={work.link ? 'underline' : ''} href={work.link}>{work.title}</a>
-								<span class="text-gray-500 uppercase">// {work.description}</span>
+					{#if work.visible}
+						<li class="mb-16">
+							<div class="flex flex-col">
+								<div class="text-sdGreen-400 mb-2">
+									<a class={work.link ? 'underline' : ''} href={work.link}>{work.title}</a>
+									<span class="text-gray-500 uppercase">// {work.description}</span>
+								</div>
+								<div class="text-gray-500 mb-4 italic text-lg">
+									<span>/**</span>
+									<br />
+									<span>* technology used in project</span>
+									<br />
+									<span
+										>* <span class="text-blue-400">@</span><span class="text-purple-400">stack</span
+										>
+										&#x2774;string&#x2775;:
+									</span>
+									{#each work.stack as stack, index}
+										{#if index !== 0}
+											,
+										{/if}
+										{#if useSkills && useSkills[stack]}
+											{useSkills[stack]['label']}
+										{/if}
+									{/each}
+									, ...
+									<br />
+									<span
+										>* <span class="text-blue-400">@</span><span class="text-purple-400"
+											>status</span
+										>
+										<span class="lowercase">&#x2774;{work.status}&#x2775;</span>
+									</span>
+									<br />
+									<span>*/</span>
+								</div>
 							</div>
-							<div class="text-gray-500 mb-4 italic text-lg">
-								<span>/**</span>
-								<br />
-								<span>* technology used in project</span>
-								<br />
-								<span
-									>* <span class="text-blue-400">@</span><span class="text-purple-400">stack</span>
-									&#x2774;string&#x2775;:
-								</span>
-								{#each work.stack as stack, index}
-									{#if index !== 0}
-										,
-									{/if}
-									{useSkills[stack].label}
-								{/each}
-								, ...
-								<br />
-								<span
-									>* <span class="text-blue-400">@</span><span class="text-purple-400">status</span>
-									<span class="lowercase">&#x2774;{work.status}&#x2775;</span>
-								</span>
-								<br />
-								<span>*/</span>
-							</div>
-						</div>
-					</li>
+						</li>
+					{/if}
 				{/each}
 			</ul>
 		</div>
