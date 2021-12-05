@@ -19,7 +19,7 @@
 				<h2
 					class="tracking-tighter font-bold uppercase leading-none font-josefinSans text-sdDarkGrey-400 text-3xl mt-10"
 				>
-					JavaScript Developer
+					Java<wbr />Script Deve<wbr />loper
 				</h2>
 				<!-- {sub-title} -->
 
@@ -41,14 +41,15 @@
 				<br /><br />
 				Er ist aktiv in der <span class="sd-skew">Open Source</span> Community, veröffentlicht auf
 				<span class="sd-skew">GitHub</span>
-				und <span class="sd-skew">NPM</span> nützliche Skripte und Packages und ist dort und auf
-				<span class="sd-skew">StackOverflow</span>
-				im regen Austausch mit Experten und Anfängern.
+				und <span class="sd-skew">NPM</span> Skripte und Packages.
+				<br />
+				Dort und auf
+				<span class="sd-skew">StackOverflow</span> ist tauscht er sich rege mit Experten und
+				Anfängern aus.
 				<br />
 				<br />
-
 				Dazu ist er ein Arbeitkultur-Allrounder und hat bei <span class="sd-skew">Fortune 500</span>
-				Unternehmen <span class="sd-skew">(mehrjährig im Ausland)</span> sowie 10-Mensch-Butzen gearbeitet.
+				Unternehmen <span class="sd-skew">(mehrjährig im Ausland)</span> sowie 10-Mensch-Agenturen gearbeitet.
 			</p>
 		</div>
 	</section>

@@ -170,7 +170,7 @@ export const useSkills: [] = [
 	},
 	{
 		type: 'library',
-		label: 'Linux/Ubuntu',
+		label: 'Linux',
 		icon: 'ubuntu',
 		level: '2',
 		link: '',

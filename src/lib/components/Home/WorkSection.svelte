@@ -160,6 +160,7 @@
 					{/if}
 				{/each}
 			</ul>
+			<p>Mehr Projekte auf <a class="sd-skew" href="https://github.com/sdoerger/">GitHub</a>.</p>
 		</div>
 	</section>
 </ScrollSpy>

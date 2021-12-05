@@ -7,25 +7,28 @@
 		<div class="mb-6">
 			<h2>Services</h2>
 			<p class="sd-like-p mb-16 text-xl text-sdlightGrey-50">
-				Hautsächlicher baut Stefan <span class="sd-skew">Web-Apps</span> und SSG (statisch
-				generierte Landing Pages).
+				Hauptsächlich baut Stefan <span class="sd-skew">Web-Apps</span> und
+				<span class="sd-skew">SSG</span>
+				(statisch generierte Landing Pages).
 				<br /><br />
-				Neben Vue.js setz er auf die Frameworks
+				Neben Vue.js wählt er Frameworks wie
 				<span class="sd-skew">Nuxt, SvelteKit, Astro</span>
-				und auf neuere Technologien wie <span class="sd-skew">Vite und TypeScript</span>.
+				und setzt auf neuere Technologien wie <span class="sd-skew">Vite</span> und
+				<span class="sd-skew">TypeScript</span>.
 				<br /><br />
-				Hilfreiche Skripte schreibt er in Node.js oder Bash und NPM-Packages.
+				Automationen schreibt er in <span class="sd-skew">Node.js</span> oder
+				<span class="sd-skew">Bash</span>
+				Skripten.
 
 				<br /><br />
-				Wichtig ist ihm dabei eine gute Mischung aus Nutzen, Bedienung, Ästhetik und
+				Wichtig ist ihm dabei die Balance aus Nutzen, Bedienung, Ästhetik und
 				<span class="sd-skew">Performance</span>.
 				<br /><br />
-				Auch wenn sein Fokus auf Frontend-Arbeiten liegt, kann er auch kleinere
-				<span class="sd-skew">Backend</span>-Aufgaben, mittels Strapi oder Express und
-				MongoDB erledigen.
+				Auch wenn sein Fokus auf Frontend-Archtitekturen liegt, ist er fähig kleinere Backend-Services,
+				mittels <span class="sd-skew">Strapi oder Express</span> und MongoDB programmieren.
 				<br /><br />
-				Auch mit dem Design Handwerk ist Stefan vertraut und bereitet Wire Frames und
-				<span class="sd-skew">Screen Designs</span> in Figma auf.
+				Stefan hat viel Freude am <span class="sd-skew">Design</span>-Handwerk und gestaltet einfache Wire Frames und Screen Designs
+				in <span class="sd-skew"> Figma </span>, für kleinere Projekte.
 			</p>
 		</div>
 	</section>

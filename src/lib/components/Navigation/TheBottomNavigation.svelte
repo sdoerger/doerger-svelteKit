@@ -52,7 +52,7 @@
 		<p class:active={$page.path === '/todos'}><a sveltekit:prefetch href="/todos">Todos</a></p> -->
 </div>
 <div
-	class="flex flex-col lg:flex-row justify-items-start space-y-3 lg:space-x-6 lg:space-y-0 text-center mt-6 text-xl text-sdGreen-400"
+	class="flex flex-row justify-items-center justify-center lg:justify-start space-x-6 space-y-0 text-center mt-6 text-xl text-sdGreen-400"
 >
 	{#each socialMedia as media}
 		<a target="_blank" href={media.link}>

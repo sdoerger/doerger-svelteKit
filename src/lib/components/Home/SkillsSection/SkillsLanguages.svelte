@@ -12,7 +12,7 @@
 					alt=""
 					class="object-contain h-36 w-full p-3 mb-5"
 				/>
-				<small class="text-sdlightGrey-50">{codingLanguage.label}</small>
+				<small class="text-sdlightGrey-50 text-lg">{codingLanguage.label}</small>
 			</div>
 		{/if}
 	{/each}
