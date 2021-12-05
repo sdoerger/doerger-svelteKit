@@ -37,6 +37,14 @@
 			visible: true
 		},
 		{
+			title: 'Retonio',
+			description: 'NPM Package: Pinia base Store and Loading Wrapper',
+			stack: [1, 17],
+			status: 'Coming 2021',
+			link: 'https://www.npmjs.com/package/retonio',
+			visible: true
+		},
+		{
 			title: 'World for Take Away',
 			description: 'Travel Blog',
 			stack: [0, 9, 10, 16, 18],
@@ -75,14 +83,14 @@
 			link: 'https://github.com/sdoerger/gitSprintToMain',
 			visible: false
 		},
-		{
-			title: 'chunkDirsMoveFiles',
-			description: 'Script to split files to dir',
-			stack: [0, 12],
-			status: 'Live (GitHub)',
-			link: 'https://github.com/sdoerger/gitSprintToMain',
-			visible: true
-		},
+		// {
+		// 	title: 'chunkDirsMoveFiles',
+		// 	description: 'Script to split files to dir',
+		// 	stack: [0, 12],
+		// 	status: 'Live (GitHub)',
+		// 	link: 'https://github.com/sdoerger/gitSprintToMain',
+		// 	visible: true
+		// },
 		{
 			title: 'Anonymus',
 			description: 'Tool to anaylse sales (ext. + Google API)',
