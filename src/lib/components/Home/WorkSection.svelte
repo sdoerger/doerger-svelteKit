@@ -14,11 +14,11 @@
 
 	const workExamples: work[] = [
 		{
-			title: 'Projekt Jikan',
+			title: 'Project Jikan',
 			description: 'Task Management App',
 			stack: [1, 8, 10, 16, 17],
-			status: 'Coming 2022',
-			visible: false
+			status: 'coming q2/3 2022',
+			visible: true
 		},
 		{
 			title: 'Untitled Project',
@@ -40,7 +40,7 @@
 			title: 'Retonio',
 			description: 'NPM Package: Pinia base Store and Loading Wrapper',
 			stack: [1, 17],
-			status: 'Coming 2021',
+			status: 'Live',
 			link: 'https://www.npmjs.com/package/retonio',
 			visible: true
 		},
@@ -49,7 +49,7 @@
 			description: 'Travel Blog',
 			stack: [0, 9, 10, 16, 18],
 			link: 'https://worldfortakeaway.com',
-			status: '12 / 2021',
+			status: 'Coming Q2 / 2022',
 			visible: true
 		},
 		{

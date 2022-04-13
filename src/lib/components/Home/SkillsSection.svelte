@@ -19,7 +19,7 @@
 			</h2>
 			<p class="mb-16 text-xl">
 				Mit diesen <span class="sd-skew">Programmiersprachen</span> (Auszeichnungs-, Style-Sprachen)
-				arbietet er <span class="sd-skew">täglich</span> bis sehr häufig.
+				arbeitet er <span class="sd-skew">täglich</span> bis sehr häufig.
 			</p>
 			<SkillsLanguages />
 		</div>

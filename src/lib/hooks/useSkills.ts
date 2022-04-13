@@ -128,7 +128,7 @@ export const useSkills: [] = [
 		visibleToType: true
 	},
 	{
-		type: 'language',
+		type: 'technology',
 		label: 'SASS',
 		icon: 'sass',
 		level: '2',
@@ -144,7 +144,7 @@ export const useSkills: [] = [
 		visibleToType: true
 	},
 	{
-		type: 'language',
+		type: 'technology',
 		label: 'MongoDB',
 		icon: 'mongodb',
 		level: '1',
@@ -296,7 +296,7 @@ export const useSkills: [] = [
 		visibleToType: true
 	},
 	{
-		type: 'language',
+		type: 'technology',
 		label: 'Pug',
 		icon: 'pug',
 		level: '1',
