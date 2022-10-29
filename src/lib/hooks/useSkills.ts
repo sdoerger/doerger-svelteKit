@@ -1,30 +1,8 @@
-// ASSETS
-// import iconVue from '$lib/assets/img/icons/vue.svg';
-// import iconNuxt from '$lib/assets/img/icons/nuxt.svg';
-// import iconTailwindcss from '$lib/assets/img/icons/tailwindcss.svg';
-// import iconVite from '$lib/assets/img/icons/vitejs.svg';
-// import iconNodejs from '$lib/assets/img/icons/nodejs.svg';
-// import iconGit from '$lib/assets/img/icons/git.svg';
-// import iconBootstrap from '$lib/assets/img/icons/bootstrap.svg';
-// import iconLinux from '$lib/assets/img/icons/ubuntu.svg';
-// import iconSvelte from '$lib/assets/img/icons/svelte.svg';
-// import iconJavascript from '$lib/assets/img/icons/javascript.svg';
-// import iconTypescript from '$lib/assets/img/icons/typescript.svg';
-// import iconHtml from '$lib/assets/img/icons/html.svg';
-// import iconCss from '$lib/assets/img/icons/css.svg';
-// import iconSass from '$lib/assets/img/icons/sass.svg';
-// import iconBash from '$lib/assets/img/icons/bash.svg';
-// import iconMongodb from '$lib/assets/img/icons/mongodb.svg';
-// import iconMysql from '$lib/assets/img/icons/mysql.svg';
-// import iconMarkdown from '$lib/assets/img/icons/markdown.svg';
-// import iconNpm from '$lib/assets/img/icons/npm.svg';
-// import iconVsCode from '$lib/assets/img/icons/vscode.svg';
-// import iconStrapi from '$lib/assets/img/icons/strapi.svg';
-// import iconPug from '$lib/assets/img/icons/pug.svg';
-
+// Icons
 import bash from '$lib/assets/img/icons/bash.svg';
 import bootstrap from '$lib/assets/img/icons/bootstrap.svg';
 import css from '$lib/assets/img/icons/css.svg';
+import cypress from '$lib/assets/img/icons/cypress.svg';
 import digitalocean from '$lib/assets/img/icons/digitalocean.svg';
 import docker from '$lib/assets/img/icons/docker.svg';
 import facebook from '$lib/assets/img/icons/facebook.svg';
@@ -34,18 +12,22 @@ import go from '$lib/assets/img/icons/go.svg';
 import html from '$lib/assets/img/icons/html.svg';
 import instagram from '$lib/assets/img/icons/instagram.svg';
 import javascript from '$lib/assets/img/icons/javascript.svg';
+import jest from '$lib/assets/img/icons/jest.svg';
 import laravel from '$lib/assets/img/icons/laravel.svg';
 import linkedin from '$lib/assets/img/icons/linkedin.svg';
 import markdown from '$lib/assets/img/icons/markdown.svg';
 import mongodb from '$lib/assets/img/icons/mongodb.svg';
 import mysql from '$lib/assets/img/icons/mysql.svg';
 import nest from '$lib/assets/img/icons/nest.svg';
+import nextjs from '$lib/assets/img/icons/nextjs.svg';
 import nodejs from '$lib/assets/img/icons/nodejs.svg';
 import npm from '$lib/assets/img/icons/npm.svg';
 import nuxt from '$lib/assets/img/icons/nuxt.svg';
 import pug from '$lib/assets/img/icons/pug.svg';
-import puppeteer from '$lib/assets/img/icons/puppeteer.svg';
+import playwright from '$lib/assets/img/icons/playwright.svg';
+import react from '$lib/assets/img/icons/react.svg';
 import sass from '$lib/assets/img/icons/sass.svg';
+import solidjs from '$lib/assets/img/icons/solidjs.svg';
 import stencil from '$lib/assets/img/icons/stencil.svg';
 import strapi from '$lib/assets/img/icons/strapi.svg';
 import svelte from '$lib/assets/img/icons/svelte.svg';
@@ -58,40 +40,45 @@ import vue from '$lib/assets/img/icons/vue.svg';
 import webcomponents from '$lib/assets/img/icons/webcomponents.svg';
 
 export const useFrameworkIcons = {
-	bash: bash,
-	bootstrap: bootstrap,
-	css: css,
-	digitalocean: digitalocean,
-	docker: docker,
-	facebook: facebook,
-	git: git,
-	github: github,
-	go: go,
-	html: html,
-	instagram: instagram,
-	javascript: javascript,
-	laravel: laravel,
-	linkedin: linkedin,
-	markdown: markdown,
-	mongodb: mongodb,
-	mysql: mysql,
-	nest: nest,
-	nodejs: nodejs,
-	npm: npm,
-	nuxt: nuxt,
-	pug: pug,
-	puppeteer: puppeteer,
-	sass: sass,
-	stencil: stencil,
-	strapi: strapi,
-	svelte: svelte,
-	tailwindcss: tailwindcss,
-	typescript: typescript,
-	ubuntu: ubuntu,
-	vitejs: vitejs,
-	vscode: vscode,
-	vue: vue,
-	webcomponents: webcomponents
+	bash,
+	bootstrap,
+	css,
+	cypress,
+	digitalocean,
+	docker,
+	facebook,
+	git,
+	github,
+	go,
+	html,
+	instagram,
+	javascript,
+	jest,
+	laravel,
+	linkedin,
+	markdown,
+	mongodb,
+	mysql,
+	nest,
+	nextjs,
+	nodejs,
+	npm,
+	nuxt,
+	pug,
+	playwright,
+	react,
+	sass,
+	solidjs,
+	stencil,
+	strapi,
+	svelte,
+	tailwindcss,
+	typescript,
+	ubuntu,
+	vitejs,
+	vscode,
+	vue,
+	webcomponents
 };
 
 export const useSkills: [] = [
@@ -149,7 +136,7 @@ export const useSkills: [] = [
 		icon: 'mongodb',
 		level: '1',
 		link: '',
-		visibleToType: true
+		visibleToType: false
 	},
 	{
 		type: 'technology',
@@ -157,19 +144,19 @@ export const useSkills: [] = [
 		icon: 'mysql',
 		level: '1',
 		link: '',
-		visibleToType: true
+		visibleToType: false
 	},
 	{
 		type: 'library',
-		label: 'Vue.js (2+3)',
+		label: 'Vue.js (v3)',
 		icon: 'vue',
 		level: '3',
 		link: '',
 		visibleToType: true
 	},
 	{
-		type: 'technology',
-		label: 'Nuxt.js',
+		type: 'library',
+		label: 'Nuxt.js (v3)',
 		icon: 'nuxt',
 		level: '2',
 		link: '',
@@ -197,7 +184,7 @@ export const useSkills: [] = [
 		icon: 'nodejs',
 		level: '2',
 		link: '',
-		visibleToType: true
+		visibleToType: false
 	},
 	{
 		type: 'library',
@@ -205,10 +192,10 @@ export const useSkills: [] = [
 		icon: 'git',
 		level: '2',
 		link: '',
-		visibleToType: true
+		visibleToType: false
 	},
 	{
-		type: 'library',
+		type: 'technology',
 		label: 'Bootstrap',
 		icon: 'bootstrap',
 		level: '3',
@@ -264,6 +251,22 @@ export const useSkills: [] = [
 		visibleToType: false
 	},
 	{
+		type: 'library',
+		label: 'Jest',
+		icon: 'jest',
+		level: '2',
+		link: '',
+		visibleToType: true
+	},
+	{
+		type: 'library',
+		label: 'Cypress',
+		icon: 'cypress',
+		level: '3',
+		link: '',
+		visibleToType: true
+	},
+	{
 		type: 'language',
 		label: 'Markdown',
 		icon: 'markdown',
@@ -293,7 +296,7 @@ export const useSkills: [] = [
 		icon: 'npm',
 		level: '1',
 		link: '',
-		visibleToType: true
+		visibleToType: false
 	},
 	{
 		type: 'technology',
@@ -301,7 +304,7 @@ export const useSkills: [] = [
 		icon: 'pug',
 		level: '1',
 		link: '',
-		visibleToType: true
+		visibleToType: false
 	},
 	{
 		type: 'technology',
@@ -313,9 +316,33 @@ export const useSkills: [] = [
 	},
 	{
 		type: 'technology',
+		label: 'React',
+		icon: 'react',
+		level: '3',
+		link: '',
+		visibleToType: true
+	},
+	{
+		type: 'technology',
 		label: 'Nest.js',
 		icon: 'nest',
 		level: '1',
+		link: '',
+		visibleToType: true
+	},
+	{
+		type: 'technology',
+		label: 'Solid',
+		icon: 'solidjs',
+		level: '3',
+		link: '',
+		visibleToType: true
+	},
+	{
+		type: 'technology',
+		label: 'Next',
+		icon: 'nextjs',
+		level: '3',
 		link: '',
 		visibleToType: true
 	},
@@ -333,7 +360,7 @@ export const useSkills: [] = [
 		icon: 'stencil',
 		level: '2',
 		link: '',
-		visibleToType: true
+		visibleToType: false
 	},
 	{
 		type: 'technology',
@@ -346,7 +373,7 @@ export const useSkills: [] = [
 	{
 		type: 'technology',
 		label: 'Playwright',
-		icon: 'puppeteer',
+		icon: 'playwright',
 		level: '2',
 		link: '',
 		visibleToType: true
@@ -357,7 +384,7 @@ export const useSkills: [] = [
 		icon: 'laravel',
 		level: '2',
 		link: '',
-		visibleToType: true
+		visibleToType: false
 	},
 	{
 		type: 'technology',
@@ -368,7 +395,7 @@ export const useSkills: [] = [
 		visibleToType: true
 	},
 	{
-		type: 'technology',
+		type: 'library',
 		label: 'GitHub',
 		icon: 'github',
 		level: '3',

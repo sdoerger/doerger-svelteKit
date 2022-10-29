@@ -12,12 +12,12 @@
 				(statisch generierte Landing Pages).
 				<br /><br />
 				Neben Vue.js wählt er Frameworks wie
-				<span class="sd-skew">Nuxt, SvelteKit, Astro</span>
+				<span class="sd-skew">Nuxt, SvelteKit, React, Astro</span>
 				und setzt auf neuere Technologien wie <span class="sd-skew">Vite</span> und
 				<span class="sd-skew">TypeScript</span>.
 				<br /><br />
-				Automationen schreibt er in <span class="sd-skew">Node.js</span> oder
-				<span class="sd-skew">Bash</span>
+				Automationen schreibt er in <span class="sd-skew">Go</span> oder
+				<span class="sd-skew">Node</span>
 				Skripten.
 
 				<br /><br />
@@ -25,7 +25,7 @@
 				<span class="sd-skew">Performance</span>.
 				<br /><br />
 				Auch wenn sein Fokus auf Frontend-Archtitekturen liegt, ist er fähig kleinere Backend-Services,
-				mittels <span class="sd-skew">Strapi oder Express</span> und MongoDB programmieren.
+				mittels <span class="sd-skew">SupaBase oder Express</span> und MongoDB programmieren.
 				<br /><br />
 				Stefan hat viel Freude am <span class="sd-skew">Design</span>-Handwerk und gestaltet einfache Wire Frames und Screen Designs
 				in <span class="sd-skew"> Figma </span>, für kleinere Projekte.
