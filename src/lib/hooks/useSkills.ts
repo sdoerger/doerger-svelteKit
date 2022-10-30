@@ -1,4 +1,5 @@
 // Icons
+import astro from '$lib/assets/img/icons/astro.svg';
 import bash from '$lib/assets/img/icons/bash.svg';
 import bootstrap from '$lib/assets/img/icons/bootstrap.svg';
 import css from '$lib/assets/img/icons/css.svg';
@@ -40,6 +41,7 @@ import vue from '$lib/assets/img/icons/vue.svg';
 import webcomponents from '$lib/assets/img/icons/webcomponents.svg';
 
 export const useFrameworkIcons = {
+	astro,
 	bash,
 	bootstrap,
 	css,
@@ -366,6 +368,14 @@ export const useSkills: [] = [
 		type: 'technology',
 		label: 'Web Components',
 		icon: 'webcomponents',
+		level: '2',
+		link: '',
+		visibleToType: false
+	},
+	{
+		type: 'technology',
+		label: 'Astro',
+		icon: 'astro',
 		level: '2',
 		link: '',
 		visibleToType: true
