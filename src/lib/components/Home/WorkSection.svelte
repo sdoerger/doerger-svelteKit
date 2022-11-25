@@ -16,17 +16,17 @@
 		{
 			title: 'Project Jikan',
 			description: 'Task Management App',
-			stack: [1, 8, 10, 16, 17],
-			status: 'coming q2/3 2022',
+			stack: [1, 9, 10, 16, 17],
+			status: 'coming q2 2023',
 			visible: true
 		},
 		{
-			title: 'Untitled Project',
-			description: 'Dev Blog',
-			stack: [1, 11, 10, 20],
-			// link: 'https://doerger.net',
-			status: 'In Preperation',
-			visible: false
+			title: 'Finanz Dörger',
+			description: 'Portfolio',
+			stack: [20, 31, 1, 10],
+			link: 'https://finanz-doerger-uk7e.vercel.app/',
+			status: 'Ready to deploy',
+			visible: true
 		},
 		{
 			title: 'Publishbar',
@@ -34,7 +34,7 @@
 			stack: [1, 8, 10, 16, 17],
 			link: 'https://publishbar.com',
 			status: 'Coming 2022',
-			visible: true
+			visible: false
 		},
 		{
 			title: 'Retonio',
@@ -49,7 +49,7 @@
 			description: 'Travel Blog',
 			stack: [0, 9, 10, 16, 18],
 			link: 'https://worldfortakeaway.com',
-			status: 'Coming Q2 / 2022',
+			status: 'Coming Q2 / 2023',
 			visible: true
 		},
 		{

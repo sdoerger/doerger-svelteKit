@@ -6,6 +6,7 @@ import css from '$lib/assets/img/icons/css.svg';
 import cypress from '$lib/assets/img/icons/cypress.svg';
 import digitalocean from '$lib/assets/img/icons/digitalocean.svg';
 import docker from '$lib/assets/img/icons/docker.svg';
+import deno from '$lib/assets/img/icons/deno.svg';
 import facebook from '$lib/assets/img/icons/facebook.svg';
 import git from '$lib/assets/img/icons/git.svg';
 import github from '$lib/assets/img/icons/github.svg';
@@ -48,6 +49,7 @@ export const useFrameworkIcons = {
 	cypress,
 	digitalocean,
 	docker,
+	deno,
 	facebook,
 	git,
 	github,
@@ -150,7 +152,7 @@ export const useSkills: [] = [
 	},
 	{
 		type: 'library',
-		label: 'Vue.js (v3)',
+		label: 'Vue.js',
 		icon: 'vue',
 		level: '3',
 		link: '',
@@ -158,7 +160,7 @@ export const useSkills: [] = [
 	},
 	{
 		type: 'library',
-		label: 'Nuxt.js (v3)',
+		label: 'Nuxt.js',
 		icon: 'nuxt',
 		level: '2',
 		link: '',
@@ -402,13 +404,21 @@ export const useSkills: [] = [
 		icon: 'digitalocean',
 		level: '1',
 		link: '',
-		visibleToType: true
+		visibleToType: false
 	},
 	{
 		type: 'library',
 		label: 'GitHub',
 		icon: 'github',
 		level: '3',
+		link: '',
+		visibleToType: true
+	},
+	{
+		type: 'technology',
+		label: 'Deno',
+		icon: 'deno',
+		level: '1',
 		link: '',
 		visibleToType: true
 	}
