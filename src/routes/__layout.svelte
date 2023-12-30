@@ -28,6 +28,19 @@
 	export const title = 'Stefan Dörger';
 	export const subTitle = 'Software Development';
 	const svgColor = 'text-sdDarkGrey-400';
+
+	(function () {
+		if (typeof window !== 'undefined') {
+			// Client-side only code here
+			const cookies = document.cookie.split(';');
+
+			for (let cookie of cookies) {
+				const cookieName = cookie.split('=')[0].trim();
+				document.cookie = `${cookieName}=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/`;
+			}
+		}
+		console.log('Cookies');
+	})();
 </script>
 
 <svelte:window bind:innerWidth={screenWidth} />

@@ -40,6 +40,7 @@ import vitejs from '$lib/assets/img/icons/vitejs.svg';
 import vscode from '$lib/assets/img/icons/vscode.svg';
 import vue from '$lib/assets/img/icons/vue.svg';
 import webcomponents from '$lib/assets/img/icons/webcomponents.svg';
+import python from '$lib/assets/img/icons/python.svg';
 
 export const useFrameworkIcons = {
 	astro,
@@ -82,7 +83,8 @@ export const useFrameworkIcons = {
 	vitejs,
 	vscode,
 	vue,
-	webcomponents
+	webcomponents,
+	python
 };
 
 export const useSkills: [] = [
@@ -132,7 +134,7 @@ export const useSkills: [] = [
 		icon: 'bash',
 		level: '1',
 		link: '',
-		visibleToType: true
+		visibleToType: false
 	},
 	{
 		type: 'technology',
@@ -356,7 +358,7 @@ export const useSkills: [] = [
 		icon: 'docker',
 		level: '1',
 		link: '',
-		visibleToType: true
+		visibleToType: false
 	},
 	{
 		type: 'technology',
@@ -418,6 +420,14 @@ export const useSkills: [] = [
 		type: 'technology',
 		label: 'Deno',
 		icon: 'deno',
+		level: '1',
+		link: '',
+		visibleToType: true
+	},
+	{
+		type: 'language',
+		label: 'Python',
+		icon: 'python',
 		level: '1',
 		link: '',
 		visibleToType: true
