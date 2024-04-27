@@ -6,6 +6,7 @@
 	// COMPONENTS
 	import TheTopNavigation from '$lib/components/Navigation/TheTopNavigation.svelte';
 	import TheBottomNavigation from '$lib/components/Navigation/TheBottomNavigation.svelte';
+	import CookieConsentComponent from '$lib/components/CookieConsent/cookieconsent.svelte';
 
 	// DYNAMICS COMPONENTS
 	import IntroSVG from '$lib/components/Home/DynamicSVGs/IntroSVG.svelte';
@@ -94,4 +95,5 @@
 			<TheBottomNavigation />
 		</div>
 	</div>
+	<CookieConsentComponent />
 </div>
