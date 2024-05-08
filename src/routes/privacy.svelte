@@ -3,7 +3,7 @@
 	import { updateTitle, updateSubTitle, updateComponent } from '$stores/dynamicTitle';
 
 	(function () {
-		updateTitle('Impressum');
+		updateTitle('Datenschutz');
 		updateSubTitle('');
 		updateComponent('dynamicSVGs');
 	})();
